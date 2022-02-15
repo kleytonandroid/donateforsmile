@@ -1,0 +1,1008 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		670A849327B314E30095F24E /* FundriserDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 670A849227B314E30095F24E /* FundriserDetailView.swift */; };
+		670A849427B314E30095F24E /* FundriserDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 670A849227B314E30095F24E /* FundriserDetailView.swift */; };
+		670A849527B314E30095F24E /* FundriserDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 670A849227B314E30095F24E /* FundriserDetailView.swift */; };
+		670A849627B314E30095F24E /* FundriserDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 670A849227B314E30095F24E /* FundriserDetailView.swift */; };
+		670A849827B316A70095F24E /* RemainingDonationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 670A849727B316A70095F24E /* RemainingDonationView.swift */; };
+		670A849927B316A70095F24E /* RemainingDonationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 670A849727B316A70095F24E /* RemainingDonationView.swift */; };
+		670A849A27B316A70095F24E /* RemainingDonationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 670A849727B316A70095F24E /* RemainingDonationView.swift */; };
+		670A849B27B316A70095F24E /* RemainingDonationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 670A849727B316A70095F24E /* RemainingDonationView.swift */; };
+		670A849E27B36DC00095F24E /* FundraiserDO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 670A849D27B36DC00095F24E /* FundraiserDO.swift */; };
+		670A849F27B36DC00095F24E /* FundraiserDO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 670A849D27B36DC00095F24E /* FundraiserDO.swift */; };
+		670A84A027B36DC00095F24E /* FundraiserDO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 670A849D27B36DC00095F24E /* FundraiserDO.swift */; };
+		670A84A127B36DC00095F24E /* FundraiserDO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 670A849D27B36DC00095F24E /* FundraiserDO.swift */; };
+		670A84A327B36E420095F24E /* OrganiserDO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 670A84A227B36E420095F24E /* OrganiserDO.swift */; };
+		670A84A427B36E420095F24E /* OrganiserDO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 670A84A227B36E420095F24E /* OrganiserDO.swift */; };
+		670A84A527B36E420095F24E /* OrganiserDO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 670A84A227B36E420095F24E /* OrganiserDO.swift */; };
+		670A84A627B36E420095F24E /* OrganiserDO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 670A84A227B36E420095F24E /* OrganiserDO.swift */; };
+		670A854827B57ED00095F24E /* FundraiserListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 670A854727B57ED00095F24E /* FundraiserListViewModel.swift */; };
+		670A854B27B5811B0095F24E /* FetchFundraiserUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 670A854A27B5811B0095F24E /* FetchFundraiserUseCase.swift */; };
+		670A854E27B59F6C0095F24E /* MockEntities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 670A854D27B59F6C0095F24E /* MockEntities.swift */; };
+		67BC87E127B1BD030082B385 /* Tests_iOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67BC87E027B1BD030082B385 /* Tests_iOS.swift */; };
+		67BC87E327B1BD030082B385 /* Tests_iOSLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67BC87E227B1BD030082B385 /* Tests_iOSLaunchTests.swift */; };
+		67BC87ED27B1BD030082B385 /* Tests_macOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67BC87EC27B1BD030082B385 /* Tests_macOS.swift */; };
+		67BC87EF27B1BD030082B385 /* Tests_macOSLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67BC87EE27B1BD030082B385 /* Tests_macOSLaunchTests.swift */; };
+		67BC87F027B1BD030082B385 /* Donate_For_SmileApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67BC87C827B1BD010082B385 /* Donate_For_SmileApp.swift */; };
+		67BC87F127B1BD030082B385 /* Donate_For_SmileApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67BC87C827B1BD010082B385 /* Donate_For_SmileApp.swift */; };
+		67BC87F227B1BD030082B385 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67BC87C927B1BD010082B385 /* ContentView.swift */; };
+		67BC87F327B1BD030082B385 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67BC87C927B1BD010082B385 /* ContentView.swift */; };
+		67BC87F427B1BD030082B385 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 67BC87CA27B1BD030082B385 /* Assets.xcassets */; };
+		67BC87F527B1BD030082B385 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 67BC87CA27B1BD030082B385 /* Assets.xcassets */; };
+		67BC880927B1BD950082B385 /* Metropolis-SemiBold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 67BC880527B1BD950082B385 /* Metropolis-SemiBold.otf */; };
+		67BC880A27B1BD950082B385 /* Metropolis-SemiBold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 67BC880527B1BD950082B385 /* Metropolis-SemiBold.otf */; };
+		67BC880B27B1BD950082B385 /* Metropolis-SemiBold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 67BC880527B1BD950082B385 /* Metropolis-SemiBold.otf */; };
+		67BC880C27B1BD950082B385 /* Metropolis-SemiBold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 67BC880527B1BD950082B385 /* Metropolis-SemiBold.otf */; };
+		67BC880D27B1BD950082B385 /* Metropolis-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 67BC880627B1BD950082B385 /* Metropolis-Regular.otf */; };
+		67BC880E27B1BD950082B385 /* Metropolis-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 67BC880627B1BD950082B385 /* Metropolis-Regular.otf */; };
+		67BC880F27B1BD950082B385 /* Metropolis-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 67BC880627B1BD950082B385 /* Metropolis-Regular.otf */; };
+		67BC881027B1BD950082B385 /* Metropolis-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 67BC880627B1BD950082B385 /* Metropolis-Regular.otf */; };
+		67BC881127B1BD950082B385 /* Metropolis-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 67BC880727B1BD950082B385 /* Metropolis-Bold.otf */; };
+		67BC881227B1BD950082B385 /* Metropolis-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 67BC880727B1BD950082B385 /* Metropolis-Bold.otf */; };
+		67BC881327B1BD950082B385 /* Metropolis-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 67BC880727B1BD950082B385 /* Metropolis-Bold.otf */; };
+		67BC881427B1BD950082B385 /* Metropolis-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 67BC880727B1BD950082B385 /* Metropolis-Bold.otf */; };
+		67BC881527B1BD950082B385 /* Metropolis-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = 67BC880827B1BD950082B385 /* Metropolis-Medium.otf */; };
+		67BC881627B1BD950082B385 /* Metropolis-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = 67BC880827B1BD950082B385 /* Metropolis-Medium.otf */; };
+		67BC881727B1BD950082B385 /* Metropolis-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = 67BC880827B1BD950082B385 /* Metropolis-Medium.otf */; };
+		67BC881827B1BD950082B385 /* Metropolis-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = 67BC880827B1BD950082B385 /* Metropolis-Medium.otf */; };
+		67BC881C27B1E2650082B385 /* FundraiserItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67BC881B27B1E2650082B385 /* FundraiserItem.swift */; };
+		67BC881D27B1E2650082B385 /* FundraiserItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67BC881B27B1E2650082B385 /* FundraiserItem.swift */; };
+		67BC881E27B1E2650082B385 /* FundraiserItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67BC881B27B1E2650082B385 /* FundraiserItem.swift */; };
+		67BC881F27B1E2650082B385 /* FundraiserItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67BC881B27B1E2650082B385 /* FundraiserItem.swift */; };
+		67BC882127B1E27A0082B385 /* Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67BC882027B1E27A0082B385 /* Helpers.swift */; };
+		67BC882227B1E27A0082B385 /* Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67BC882027B1E27A0082B385 /* Helpers.swift */; };
+		67BC882327B1E27A0082B385 /* Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67BC882027B1E27A0082B385 /* Helpers.swift */; };
+		67BC882427B1E27A0082B385 /* Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67BC882027B1E27A0082B385 /* Helpers.swift */; };
+		67BC882627B1E42E0082B385 /* ProgressBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67BC882527B1E42E0082B385 /* ProgressBarView.swift */; };
+		67BC882727B1E42E0082B385 /* ProgressBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67BC882527B1E42E0082B385 /* ProgressBarView.swift */; };
+		67BC882827B1E42E0082B385 /* ProgressBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67BC882527B1E42E0082B385 /* ProgressBarView.swift */; };
+		67BC882927B1E42E0082B385 /* ProgressBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67BC882527B1E42E0082B385 /* ProgressBarView.swift */; };
+		67BC883927B2DF800082B385 /* SearchBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67BC883827B2DF800082B385 /* SearchBarView.swift */; };
+		67BC883A27B2DF800082B385 /* SearchBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67BC883827B2DF800082B385 /* SearchBarView.swift */; };
+		67BC883B27B2DF800082B385 /* SearchBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67BC883827B2DF800082B385 /* SearchBarView.swift */; };
+		67BC883C27B2DF800082B385 /* SearchBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67BC883827B2DF800082B385 /* SearchBarView.swift */; };
+		67BC883E27B2E5DE0082B385 /* FundraiserListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67BC883D27B2E5DE0082B385 /* FundraiserListView.swift */; };
+		67BC883F27B2E5DE0082B385 /* FundraiserListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67BC883D27B2E5DE0082B385 /* FundraiserListView.swift */; };
+		67BC884027B2E5DE0082B385 /* FundraiserListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67BC883D27B2E5DE0082B385 /* FundraiserListView.swift */; };
+		67BC884127B2E5DE0082B385 /* FundraiserListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67BC883D27B2E5DE0082B385 /* FundraiserListView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		67BC87DD27B1BD030082B385 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 67BC87C327B1BD010082B385 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 67BC87CE27B1BD030082B385;
+			remoteInfo = "Donate For Smile (iOS)";
+		};
+		67BC87E927B1BD030082B385 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 67BC87C327B1BD010082B385 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 67BC87D427B1BD030082B385;
+			remoteInfo = "Donate For Smile (macOS)";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		670A849227B314E30095F24E /* FundriserDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FundriserDetailView.swift; sourceTree = "<group>"; };
+		670A849727B316A70095F24E /* RemainingDonationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemainingDonationView.swift; sourceTree = "<group>"; };
+		670A849D27B36DC00095F24E /* FundraiserDO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FundraiserDO.swift; sourceTree = "<group>"; };
+		670A84A227B36E420095F24E /* OrganiserDO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrganiserDO.swift; sourceTree = "<group>"; };
+		670A854727B57ED00095F24E /* FundraiserListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FundraiserListViewModel.swift; sourceTree = "<group>"; };
+		670A854A27B5811B0095F24E /* FetchFundraiserUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchFundraiserUseCase.swift; sourceTree = "<group>"; };
+		670A854D27B59F6C0095F24E /* MockEntities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockEntities.swift; sourceTree = "<group>"; };
+		67BC87C827B1BD010082B385 /* Donate_For_SmileApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Donate_For_SmileApp.swift; sourceTree = "<group>"; };
+		67BC87C927B1BD010082B385 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		67BC87CA27B1BD030082B385 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		67BC87CF27B1BD030082B385 /* Donate For Smile.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Donate For Smile.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		67BC87D527B1BD030082B385 /* Donate For Smile.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Donate For Smile.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		67BC87D727B1BD030082B385 /* macOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = macOS.entitlements; sourceTree = "<group>"; };
+		67BC87DC27B1BD030082B385 /* Tests iOS.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Tests iOS.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		67BC87E027B1BD030082B385 /* Tests_iOS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests_iOS.swift; sourceTree = "<group>"; };
+		67BC87E227B1BD030082B385 /* Tests_iOSLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests_iOSLaunchTests.swift; sourceTree = "<group>"; };
+		67BC87E827B1BD030082B385 /* Tests macOS.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Tests macOS.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		67BC87EC27B1BD030082B385 /* Tests_macOS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests_macOS.swift; sourceTree = "<group>"; };
+		67BC87EE27B1BD030082B385 /* Tests_macOSLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests_macOSLaunchTests.swift; sourceTree = "<group>"; };
+		67BC880527B1BD950082B385 /* Metropolis-SemiBold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Metropolis-SemiBold.otf"; sourceTree = "<group>"; };
+		67BC880627B1BD950082B385 /* Metropolis-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Metropolis-Regular.otf"; sourceTree = "<group>"; };
+		67BC880727B1BD950082B385 /* Metropolis-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Metropolis-Bold.otf"; sourceTree = "<group>"; };
+		67BC880827B1BD950082B385 /* Metropolis-Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Metropolis-Medium.otf"; sourceTree = "<group>"; };
+		67BC881927B1BDC80082B385 /* Donate-For-Smile--iOS--Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "Donate-For-Smile--iOS--Info.plist"; sourceTree = "<group>"; };
+		67BC881B27B1E2650082B385 /* FundraiserItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FundraiserItem.swift; sourceTree = "<group>"; };
+		67BC882027B1E27A0082B385 /* Helpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Helpers.swift; sourceTree = "<group>"; };
+		67BC882527B1E42E0082B385 /* ProgressBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressBarView.swift; sourceTree = "<group>"; };
+		67BC883827B2DF800082B385 /* SearchBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBarView.swift; sourceTree = "<group>"; };
+		67BC883D27B2E5DE0082B385 /* FundraiserListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FundraiserListView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		67BC87CC27B1BD030082B385 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		67BC87D227B1BD030082B385 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		67BC87D927B1BD030082B385 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		67BC87E527B1BD030082B385 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		670A853827B5536C0095F24E /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				670A853E27B554080095F24E /* Entities */,
+				670A853D27B554020095F24E /* UseCases */,
+				670A853C27B553F60095F24E /* Interfaces */,
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		670A853927B553750095F24E /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				67BC87C827B1BD010082B385 /* Donate_For_SmileApp.swift */,
+				67BC87C927B1BD010082B385 /* ContentView.swift */,
+				67BC87CA27B1BD030082B385 /* Assets.xcassets */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		670A853A27B553800095F24E /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				67BC882027B1E27A0082B385 /* Helpers.swift */,
+				67BC883727B2DF660082B385 /* SharedComponents */,
+				67BC881A27B1E2470082B385 /* Fundraiser */,
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		670A853B27B553910095F24E /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				670A854C27B59F2F0095F24E /* Mocks */,
+				670A854227B554F80095F24E /* Repositories */,
+				670A854327B555060095F24E /* Network */,
+				670A854427B555110095F24E /* PersistentStores */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		670A853C27B553F60095F24E /* Interfaces */ = {
+			isa = PBXGroup;
+			children = (
+				670A853F27B554190095F24E /* Repositories */,
+			);
+			path = Interfaces;
+			sourceTree = "<group>";
+		};
+		670A853D27B554020095F24E /* UseCases */ = {
+			isa = PBXGroup;
+			children = (
+				670A854A27B5811B0095F24E /* FetchFundraiserUseCase.swift */,
+			);
+			path = UseCases;
+			sourceTree = "<group>";
+		};
+		670A853E27B554080095F24E /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				670A849D27B36DC00095F24E /* FundraiserDO.swift */,
+				670A84A227B36E420095F24E /* OrganiserDO.swift */,
+			);
+			path = Entities;
+			sourceTree = "<group>";
+		};
+		670A853F27B554190095F24E /* Repositories */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Repositories;
+			sourceTree = "<group>";
+		};
+		670A854027B554990095F24E /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				670A854727B57ED00095F24E /* FundraiserListViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		670A854127B554A30095F24E /* View */ = {
+			isa = PBXGroup;
+			children = (
+				67BC881B27B1E2650082B385 /* FundraiserItem.swift */,
+				67BC882527B1E42E0082B385 /* ProgressBarView.swift */,
+				67BC883D27B2E5DE0082B385 /* FundraiserListView.swift */,
+				670A849227B314E30095F24E /* FundriserDetailView.swift */,
+				670A849727B316A70095F24E /* RemainingDonationView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		670A854227B554F80095F24E /* Repositories */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Repositories;
+			sourceTree = "<group>";
+		};
+		670A854327B555060095F24E /* Network */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		670A854427B555110095F24E /* PersistentStores */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = PersistentStores;
+			sourceTree = "<group>";
+		};
+		670A854527B555300095F24E /* Infrastructure */ = {
+			isa = PBXGroup;
+			children = (
+				670A854627B555480095F24E /* Network */,
+			);
+			path = Infrastructure;
+			sourceTree = "<group>";
+		};
+		670A854627B555480095F24E /* Network */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		670A854C27B59F2F0095F24E /* Mocks */ = {
+			isa = PBXGroup;
+			children = (
+				670A854D27B59F6C0095F24E /* MockEntities.swift */,
+			);
+			path = Mocks;
+			sourceTree = "<group>";
+		};
+		67BC87C227B1BD010082B385 = {
+			isa = PBXGroup;
+			children = (
+				67BC881927B1BDC80082B385 /* Donate-For-Smile--iOS--Info.plist */,
+				67BC87C727B1BD010082B385 /* Shared */,
+				67BC87D627B1BD030082B385 /* macOS */,
+				67BC87DF27B1BD030082B385 /* Tests iOS */,
+				67BC87EB27B1BD030082B385 /* Tests macOS */,
+				67BC87D027B1BD030082B385 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		67BC87C727B1BD010082B385 /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				670A853927B553750095F24E /* Application */,
+				670A853B27B553910095F24E /* Data */,
+				670A853827B5536C0095F24E /* Domain */,
+				670A854527B555300095F24E /* Infrastructure */,
+				670A853A27B553800095F24E /* Presentation */,
+				67BC880427B1BD260082B385 /* Custom Fonts */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
+		67BC87D027B1BD030082B385 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				67BC87CF27B1BD030082B385 /* Donate For Smile.app */,
+				67BC87D527B1BD030082B385 /* Donate For Smile.app */,
+				67BC87DC27B1BD030082B385 /* Tests iOS.xctest */,
+				67BC87E827B1BD030082B385 /* Tests macOS.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		67BC87D627B1BD030082B385 /* macOS */ = {
+			isa = PBXGroup;
+			children = (
+				67BC87D727B1BD030082B385 /* macOS.entitlements */,
+			);
+			path = macOS;
+			sourceTree = "<group>";
+		};
+		67BC87DF27B1BD030082B385 /* Tests iOS */ = {
+			isa = PBXGroup;
+			children = (
+				67BC87E027B1BD030082B385 /* Tests_iOS.swift */,
+				67BC87E227B1BD030082B385 /* Tests_iOSLaunchTests.swift */,
+			);
+			path = "Tests iOS";
+			sourceTree = "<group>";
+		};
+		67BC87EB27B1BD030082B385 /* Tests macOS */ = {
+			isa = PBXGroup;
+			children = (
+				67BC87EC27B1BD030082B385 /* Tests_macOS.swift */,
+				67BC87EE27B1BD030082B385 /* Tests_macOSLaunchTests.swift */,
+			);
+			path = "Tests macOS";
+			sourceTree = "<group>";
+		};
+		67BC880427B1BD260082B385 /* Custom Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				67BC880727B1BD950082B385 /* Metropolis-Bold.otf */,
+				67BC880827B1BD950082B385 /* Metropolis-Medium.otf */,
+				67BC880627B1BD950082B385 /* Metropolis-Regular.otf */,
+				67BC880527B1BD950082B385 /* Metropolis-SemiBold.otf */,
+			);
+			path = "Custom Fonts";
+			sourceTree = "<group>";
+		};
+		67BC881A27B1E2470082B385 /* Fundraiser */ = {
+			isa = PBXGroup;
+			children = (
+				670A854027B554990095F24E /* ViewModel */,
+				670A854127B554A30095F24E /* View */,
+			);
+			path = Fundraiser;
+			sourceTree = "<group>";
+		};
+		67BC883727B2DF660082B385 /* SharedComponents */ = {
+			isa = PBXGroup;
+			children = (
+				67BC883827B2DF800082B385 /* SearchBarView.swift */,
+			);
+			path = SharedComponents;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		67BC87CE27B1BD030082B385 /* Donate For Smile (iOS) */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 67BC87F827B1BD030082B385 /* Build configuration list for PBXNativeTarget "Donate For Smile (iOS)" */;
+			buildPhases = (
+				67BC87CB27B1BD030082B385 /* Sources */,
+				67BC87CC27B1BD030082B385 /* Frameworks */,
+				67BC87CD27B1BD030082B385 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Donate For Smile (iOS)";
+			productName = "Donate For Smile (iOS)";
+			productReference = 67BC87CF27B1BD030082B385 /* Donate For Smile.app */;
+			productType = "com.apple.product-type.application";
+		};
+		67BC87D427B1BD030082B385 /* Donate For Smile (macOS) */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 67BC87FB27B1BD030082B385 /* Build configuration list for PBXNativeTarget "Donate For Smile (macOS)" */;
+			buildPhases = (
+				67BC87D127B1BD030082B385 /* Sources */,
+				67BC87D227B1BD030082B385 /* Frameworks */,
+				67BC87D327B1BD030082B385 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Donate For Smile (macOS)";
+			productName = "Donate For Smile (macOS)";
+			productReference = 67BC87D527B1BD030082B385 /* Donate For Smile.app */;
+			productType = "com.apple.product-type.application";
+		};
+		67BC87DB27B1BD030082B385 /* Tests iOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 67BC87FE27B1BD030082B385 /* Build configuration list for PBXNativeTarget "Tests iOS" */;
+			buildPhases = (
+				67BC87D827B1BD030082B385 /* Sources */,
+				67BC87D927B1BD030082B385 /* Frameworks */,
+				67BC87DA27B1BD030082B385 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				67BC87DE27B1BD030082B385 /* PBXTargetDependency */,
+			);
+			name = "Tests iOS";
+			productName = "Tests iOS";
+			productReference = 67BC87DC27B1BD030082B385 /* Tests iOS.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+		67BC87E727B1BD030082B385 /* Tests macOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 67BC880127B1BD030082B385 /* Build configuration list for PBXNativeTarget "Tests macOS" */;
+			buildPhases = (
+				67BC87E427B1BD030082B385 /* Sources */,
+				67BC87E527B1BD030082B385 /* Frameworks */,
+				67BC87E627B1BD030082B385 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				67BC87EA27B1BD030082B385 /* PBXTargetDependency */,
+			);
+			name = "Tests macOS";
+			productName = "Tests macOS";
+			productReference = 67BC87E827B1BD030082B385 /* Tests macOS.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		67BC87C327B1BD010082B385 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1320;
+				LastUpgradeCheck = 1320;
+				TargetAttributes = {
+					67BC87CE27B1BD030082B385 = {
+						CreatedOnToolsVersion = 13.2.1;
+					};
+					67BC87D427B1BD030082B385 = {
+						CreatedOnToolsVersion = 13.2.1;
+					};
+					67BC87DB27B1BD030082B385 = {
+						CreatedOnToolsVersion = 13.2.1;
+						TestTargetID = 67BC87CE27B1BD030082B385;
+					};
+					67BC87E727B1BD030082B385 = {
+						CreatedOnToolsVersion = 13.2.1;
+						TestTargetID = 67BC87D427B1BD030082B385;
+					};
+				};
+			};
+			buildConfigurationList = 67BC87C627B1BD010082B385 /* Build configuration list for PBXProject "Donate For Smile" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 67BC87C227B1BD010082B385;
+			productRefGroup = 67BC87D027B1BD030082B385 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				67BC87CE27B1BD030082B385 /* Donate For Smile (iOS) */,
+				67BC87D427B1BD030082B385 /* Donate For Smile (macOS) */,
+				67BC87DB27B1BD030082B385 /* Tests iOS */,
+				67BC87E727B1BD030082B385 /* Tests macOS */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		67BC87CD27B1BD030082B385 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				67BC880927B1BD950082B385 /* Metropolis-SemiBold.otf in Resources */,
+				67BC87F427B1BD030082B385 /* Assets.xcassets in Resources */,
+				67BC881127B1BD950082B385 /* Metropolis-Bold.otf in Resources */,
+				67BC881527B1BD950082B385 /* Metropolis-Medium.otf in Resources */,
+				67BC880D27B1BD950082B385 /* Metropolis-Regular.otf in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		67BC87D327B1BD030082B385 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				67BC880A27B1BD950082B385 /* Metropolis-SemiBold.otf in Resources */,
+				67BC87F527B1BD030082B385 /* Assets.xcassets in Resources */,
+				67BC881227B1BD950082B385 /* Metropolis-Bold.otf in Resources */,
+				67BC881627B1BD950082B385 /* Metropolis-Medium.otf in Resources */,
+				67BC880E27B1BD950082B385 /* Metropolis-Regular.otf in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		67BC87DA27B1BD030082B385 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				67BC881727B1BD950082B385 /* Metropolis-Medium.otf in Resources */,
+				67BC880F27B1BD950082B385 /* Metropolis-Regular.otf in Resources */,
+				67BC880B27B1BD950082B385 /* Metropolis-SemiBold.otf in Resources */,
+				67BC881327B1BD950082B385 /* Metropolis-Bold.otf in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		67BC87E627B1BD030082B385 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				67BC881827B1BD950082B385 /* Metropolis-Medium.otf in Resources */,
+				67BC881027B1BD950082B385 /* Metropolis-Regular.otf in Resources */,
+				67BC880C27B1BD950082B385 /* Metropolis-SemiBold.otf in Resources */,
+				67BC881427B1BD950082B385 /* Metropolis-Bold.otf in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		67BC87CB27B1BD030082B385 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				67BC87F227B1BD030082B385 /* ContentView.swift in Sources */,
+				67BC881C27B1E2650082B385 /* FundraiserItem.swift in Sources */,
+				670A84A327B36E420095F24E /* OrganiserDO.swift in Sources */,
+				67BC883E27B2E5DE0082B385 /* FundraiserListView.swift in Sources */,
+				670A854E27B59F6C0095F24E /* MockEntities.swift in Sources */,
+				670A854B27B5811B0095F24E /* FetchFundraiserUseCase.swift in Sources */,
+				67BC87F027B1BD030082B385 /* Donate_For_SmileApp.swift in Sources */,
+				670A849327B314E30095F24E /* FundriserDetailView.swift in Sources */,
+				670A849E27B36DC00095F24E /* FundraiserDO.swift in Sources */,
+				670A849827B316A70095F24E /* RemainingDonationView.swift in Sources */,
+				67BC882627B1E42E0082B385 /* ProgressBarView.swift in Sources */,
+				670A854827B57ED00095F24E /* FundraiserListViewModel.swift in Sources */,
+				67BC883927B2DF800082B385 /* SearchBarView.swift in Sources */,
+				67BC882127B1E27A0082B385 /* Helpers.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		67BC87D127B1BD030082B385 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				67BC87F327B1BD030082B385 /* ContentView.swift in Sources */,
+				67BC881D27B1E2650082B385 /* FundraiserItem.swift in Sources */,
+				670A84A427B36E420095F24E /* OrganiserDO.swift in Sources */,
+				67BC883F27B2E5DE0082B385 /* FundraiserListView.swift in Sources */,
+				67BC87F127B1BD030082B385 /* Donate_For_SmileApp.swift in Sources */,
+				670A849427B314E30095F24E /* FundriserDetailView.swift in Sources */,
+				670A849F27B36DC00095F24E /* FundraiserDO.swift in Sources */,
+				670A849927B316A70095F24E /* RemainingDonationView.swift in Sources */,
+				67BC882727B1E42E0082B385 /* ProgressBarView.swift in Sources */,
+				67BC883A27B2DF800082B385 /* SearchBarView.swift in Sources */,
+				67BC882227B1E27A0082B385 /* Helpers.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		67BC87D827B1BD030082B385 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				67BC87E327B1BD030082B385 /* Tests_iOSLaunchTests.swift in Sources */,
+				67BC881E27B1E2650082B385 /* FundraiserItem.swift in Sources */,
+				670A84A527B36E420095F24E /* OrganiserDO.swift in Sources */,
+				67BC884027B2E5DE0082B385 /* FundraiserListView.swift in Sources */,
+				67BC87E127B1BD030082B385 /* Tests_iOS.swift in Sources */,
+				670A849527B314E30095F24E /* FundriserDetailView.swift in Sources */,
+				670A84A027B36DC00095F24E /* FundraiserDO.swift in Sources */,
+				670A849A27B316A70095F24E /* RemainingDonationView.swift in Sources */,
+				67BC882827B1E42E0082B385 /* ProgressBarView.swift in Sources */,
+				67BC883B27B2DF800082B385 /* SearchBarView.swift in Sources */,
+				67BC882327B1E27A0082B385 /* Helpers.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		67BC87E427B1BD030082B385 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				67BC87EF27B1BD030082B385 /* Tests_macOSLaunchTests.swift in Sources */,
+				67BC881F27B1E2650082B385 /* FundraiserItem.swift in Sources */,
+				670A84A627B36E420095F24E /* OrganiserDO.swift in Sources */,
+				67BC884127B2E5DE0082B385 /* FundraiserListView.swift in Sources */,
+				67BC87ED27B1BD030082B385 /* Tests_macOS.swift in Sources */,
+				670A849627B314E30095F24E /* FundriserDetailView.swift in Sources */,
+				670A84A127B36DC00095F24E /* FundraiserDO.swift in Sources */,
+				670A849B27B316A70095F24E /* RemainingDonationView.swift in Sources */,
+				67BC882927B1E42E0082B385 /* ProgressBarView.swift in Sources */,
+				67BC883C27B2DF800082B385 /* SearchBarView.swift in Sources */,
+				67BC882427B1E27A0082B385 /* Helpers.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		67BC87DE27B1BD030082B385 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 67BC87CE27B1BD030082B385 /* Donate For Smile (iOS) */;
+			targetProxy = 67BC87DD27B1BD030082B385 /* PBXContainerItemProxy */;
+		};
+		67BC87EA27B1BD030082B385 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 67BC87D427B1BD030082B385 /* Donate For Smile (macOS) */;
+			targetProxy = 67BC87E927B1BD030082B385 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		67BC87F627B1BD030082B385 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		67BC87F727B1BD030082B385 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		67BC87F927B1BD030082B385 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 2578HQNPSE;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Donate-For-Smile--iOS--Info.plist";
+				INFOPLIST_KEY_LSApplicationCategoryType = "";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.kleytonjsantos.Donate-For-Smile";
+				PRODUCT_NAME = "Donate For Smile";
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		67BC87FA27B1BD030082B385 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 2578HQNPSE;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Donate-For-Smile--iOS--Info.plist";
+				INFOPLIST_KEY_LSApplicationCategoryType = "";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.kleytonjsantos.Donate-For-Smile";
+				PRODUCT_NAME = "Donate For Smile";
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		67BC87FC27B1BD030082B385 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = macOS/macOS.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 2578HQNPSE;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 12.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.kleytonjsantos.Donate-For-Smile";
+				PRODUCT_NAME = "Donate For Smile";
+				SDKROOT = macosx;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		67BC87FD27B1BD030082B385 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = macOS/macOS.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 2578HQNPSE;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 12.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.kleytonjsantos.Donate-For-Smile";
+				PRODUCT_NAME = "Donate For Smile";
+				SDKROOT = macosx;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		67BC87FF27B1BD030082B385 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 2578HQNPSE;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.kleytonjsantos.Tests-iOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Donate For Smile (iOS)";
+			};
+			name = Debug;
+		};
+		67BC880027B1BD030082B385 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 2578HQNPSE;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.kleytonjsantos.Tests-iOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Donate For Smile (iOS)";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		67BC880227B1BD030082B385 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 2578HQNPSE;
+				GENERATE_INFOPLIST_FILE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 12.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.kleytonjsantos.Tests-macOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = "Donate For Smile (macOS)";
+			};
+			name = Debug;
+		};
+		67BC880327B1BD030082B385 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 2578HQNPSE;
+				GENERATE_INFOPLIST_FILE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 12.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.kleytonjsantos.Tests-macOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = "Donate For Smile (macOS)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		67BC87C627B1BD010082B385 /* Build configuration list for PBXProject "Donate For Smile" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				67BC87F627B1BD030082B385 /* Debug */,
+				67BC87F727B1BD030082B385 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		67BC87F827B1BD030082B385 /* Build configuration list for PBXNativeTarget "Donate For Smile (iOS)" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				67BC87F927B1BD030082B385 /* Debug */,
+				67BC87FA27B1BD030082B385 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		67BC87FB27B1BD030082B385 /* Build configuration list for PBXNativeTarget "Donate For Smile (macOS)" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				67BC87FC27B1BD030082B385 /* Debug */,
+				67BC87FD27B1BD030082B385 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		67BC87FE27B1BD030082B385 /* Build configuration list for PBXNativeTarget "Tests iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				67BC87FF27B1BD030082B385 /* Debug */,
+				67BC880027B1BD030082B385 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		67BC880127B1BD030082B385 /* Build configuration list for PBXNativeTarget "Tests macOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				67BC880227B1BD030082B385 /* Debug */,
+				67BC880327B1BD030082B385 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 67BC87C327B1BD010082B385 /* Project object */;
+}
