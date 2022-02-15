@@ -23,13 +23,13 @@ struct FundriserDetailView: View {
                             .scaledToFit()
                             .frame(maxWidth: .infinity, maxHeight: 178)
                         
-                        Text(model?.title ?? "Help them for better education")
+                        Text(model?.title ?? "")
                             .font(.custom(customFonts, size: 20))
                             .fontWeight(.bold)
                             .frame(maxWidth: .infinity, alignment: .leading)
                             .padding(.top, 20)
                         
-                        Text("\(model?.totalDonated ?? 0)+ donated")
+                        Text("\(model?.totalDonated ?? 0)+ \("donated".localized())")
                             .font(.custom(customFonts, size: 12))
                             .foregroundColor(Color(appGrayColor))
                             .frame(maxWidth: .infinity, alignment: .leading)
@@ -41,7 +41,7 @@ struct FundriserDetailView: View {
                             .padding(.vertical, 20)
                         
                         
-                        Text("Organizer")
+                        Text("organizer".localizedFirstUpperCased())
                             .font(.custom(customFonts, size: 16))
                             .fontWeight(.medium)
                             .frame(maxWidth: .infinity, alignment: .leading)
@@ -72,7 +72,7 @@ struct FundriserDetailView: View {
                             Button {
                                 descriptionTabSelected.toggle()
                             } label: {
-                                Text("Description")
+                                Text("description".localizedFirstUpperCased())
                                     .font(.custom(customFonts, size: 14))
                                     .foregroundColor(Color(appGreenColor))
                             }
@@ -82,7 +82,7 @@ struct FundriserDetailView: View {
                             Button {
                                 descriptionTabSelected.toggle()
                             } label: {
-                                Text("Comments(58)")
+                                Text("\("comments".localizedFirstUpperCased()) (58)")
                                     .font(.custom(customFonts, size: 14))
                                     .foregroundColor(Color(appGrayColor))
                             }
@@ -105,7 +105,7 @@ struct FundriserDetailView: View {
                     Button {
                         // Do action here
                     } label: {
-                        Text("Donate Now")
+                        Text("donate_now".localizedFirstCapitalized())
                             .font(.custom(customFonts, size: 18))
                             .fontWeight(.bold)
                             .foregroundColor(.white)
@@ -130,7 +130,7 @@ struct FundriserDetailView_Previews: PreviewProvider {
                                                           title: "Help them for education",
                                                           donatedAvatars: [],
                                                           totalDonated: 55,
-                                                          category: "Education",
+                                                          category: .education,
                                                           goal: 10000,
                                                           raised: 3300,
                                                           description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit dolor sit  consectetur... ",

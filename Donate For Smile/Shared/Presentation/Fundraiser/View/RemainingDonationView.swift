@@ -21,12 +21,12 @@ struct RemainingDonationView: View {
                 .padding(.top, isBiggerComponent ? 20 : 13)
             
             HStack {
-                Text("Goals: $\(goals, specifier: "%.0f")")
+                Text("\("goals".localizedFirstUpperCased()): $\(goals, specifier: "%.0f")")
                     .font(.custom(customFonts, size: isBiggerComponent ? 16 : 14))
                 
                 Spacer()
                 
-                Text("Raised of $\(raised, specifier: "%.0f")(\(raised/goals*100, specifier: "%.0f"))%")
+                Text("\("raised_of".localizedFirstUpperCased()) $\(raised, specifier: "%.0f")(\(raised/goals*100, specifier: "%.0f"))%")
                     .font(.custom(customFonts, size: isBiggerComponent ? 14 : 12))
                     .foregroundColor(Color(appGreenColor))
             }.padding(.top, isBiggerComponent ? 20 : 13)

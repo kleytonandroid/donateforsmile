@@ -1,0 +1,31 @@
+//----------------------------------------------------
+// General
+"hello" = "hello";
+
+//----------------------------------------------------
+// Search bar
+"search_here" = "search here";
+
+//----------------------------------------------------
+// Fundraiser Item
+"read_more" = "read more";
+"goals" = "goals";
+"raised_of" = "raised of";
+"education" = "education";
+"medical" = "medical";
+"events" = "events";
+"emergency" = "emergency";
+"business" = "business";
+"poverty" = "poverty";
+"travel" = "travel";
+"sports" = "sports";
+"animals" = "animals";
+"others" = "others";
+
+//----------------------------------------------------
+// Fundraiser Details
+"organizer" = "organizer";
+"donated" = "donated";
+"description" = "description";
+"comments" = "comments";
+"donate_now" = "donate now";

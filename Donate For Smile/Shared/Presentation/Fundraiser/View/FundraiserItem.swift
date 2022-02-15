@@ -44,7 +44,7 @@ struct FundraiserItem: View {
                     
                     Spacer()
                     
-                    Text(model.category)
+                    Text(model.category.rawValue.localizedFirstUpperCased())
                         .font(.custom(customFonts, size: 12))
                         .foregroundColor(Color(appGreenColor))
                         .padding(.horizontal, 12)
@@ -56,7 +56,7 @@ struct FundraiserItem: View {
                 }
                 .padding(.top, 13)
                 
-                Text("\(model.description) \(Text("Read More").foregroundColor(Color(appGreenColor)))")
+                Text("\(model.description) \(Text("read_more".localizedFirstUpperCased()).foregroundColor(Color(appGreenColor)))")
                     .font(.custom(customFonts, size: 14))
                     .foregroundColor(Color(appGrayColor))
                     .frame(maxWidth: .infinity, alignment: .leading)
@@ -81,7 +81,7 @@ struct CampaignItem_Previews: PreviewProvider {
                                     title: "Help me to overcome Debt",
                                     donatedAvatars: [],
                                     totalDonated: 55,
-                                    category: "Poverty",
+                                    category: .poverty,
                                     goal: 5000,
                                     raised: 2300,
                                     description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit dolor sit  consectetur... ",

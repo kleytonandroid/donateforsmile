@@ -12,7 +12,7 @@ struct FundraiserDO: Identifiable {
     var title: String
     var donatedAvatars: [String]
     var totalDonated: Int
-    var category: String
+    var category: Category
     var goal: Float
     var raised: Float
     var description: String

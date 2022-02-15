@@ -16,7 +16,7 @@ struct SearchBarView: View {
                 Image("magnifying_glass_icon")
                     .frame(width: 20, height: 20)
                 
-                TextField("Search here", text: $searchText)
+                TextField("search_here".localizedFirstUpperCased(), text: $searchText)
                     .font(.custom(customFonts, size: 16))
                 
                 Button {
