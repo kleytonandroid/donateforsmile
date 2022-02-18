@@ -11,42 +11,50 @@ struct FundraiserListView: View {
     
     @StateObject var viewModel = FundraiserListViewModel()
     
-    @State var fundraiserSelected: FundraiserDO?
+    @EnvironmentObject var sharedData: SharedDataModel
     
     @State var searchText: String = ""
-    @State var presentFundraiserDetail = false
     
     var body: some View {
-        NavigationView {
-                    VStack {
-                        ScrollView(showsIndicators: false) {
-                            VStack(spacing: 0) {
-                                SearchBarView(searchText: $searchText)
-                                    .frame(height: 60)
-                                    .padding(.horizontal, 16)
-                                    .padding(.vertical, 22)
-                                NavigationLink(destination: FundriserDetailView(model: $fundraiserSelected),
-                                               isActive: $presentFundraiserDetail) {
-                                    EmptyView()
-                                }
-                                
-                                LazyVStack(spacing: 20) {
-                                    ForEach(viewModel.fundraisers) { fundRaiser in
-
-                                        FundraiserItem(model: fundRaiser)
-                                            .onTapGesture {
-                                                fundraiserSelected = fundRaiser
-                                                presentFundraiserDetail.toggle()
-                                            }
-                                        
+        VStack {
+            ZStack {
+                Button {
+                 // Closing View...
+                } label: {
+                    Image("arrow_right")
+                        .frame(width: 24, height: 24)
+                }.frame(maxWidth: .infinity, alignment: .leading)
+                
+                Text("All Fundraisers")
+                    .font(.custom(customFonts, size: 20))
+                    .fontWeight(.semibold)
+            }
+            .padding(.horizontal, 16)
+            .padding(.vertical, 20)
+            
+            ScrollView(showsIndicators: false) {
+                VStack(spacing: 0) {
+                    SearchBarView(searchText: $searchText)
+                        .frame(height: 60)
+                        .padding(.horizontal, 16)
+                        .padding(.vertical, 22)
+                    
+                    LazyVStack(spacing: 20) {
+                        ForEach(viewModel.fundraisers) { fundRaiser in
+                            
+                            FundraiserItem(model: fundRaiser)
+                                .onTapGesture {
+                                    withAnimation(.easeInOut) {
+                                        sharedData.fundraiserFromHome = fundRaiser
+                                        sharedData.showFundraiserDetail.toggle()
                                     }
-                                }.padding(.horizontal, 16)
-                            }
+                                }
+                            
                         }
-                    }
+                    }.padding(.horizontal, 16)
+                }
+            }
         }
-        .navigationTitle("Fundraiser")
-        .navigationBarTitleDisplayMode(.inline)
         .onAppear {
             viewModel.fetchFundraisers()
         }
@@ -55,6 +63,6 @@ struct FundraiserListView: View {
 
 struct FoundraiserListView_Previews: PreviewProvider {
     static var previews: some View {
-        FundraiserListView()
+        ContentView()
     }
 }

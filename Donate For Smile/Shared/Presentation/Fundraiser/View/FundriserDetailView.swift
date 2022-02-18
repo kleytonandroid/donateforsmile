@@ -9,33 +9,58 @@ import SwiftUI
 
 struct FundriserDetailView: View {
     
-    @Binding var model: FundraiserDO?
+    @EnvironmentObject var sharedData: SharedDataModel
     
     @State private var descriptionTabSelected = true
     
     var body: some View {
         ZStack {
             VStack(spacing: 0) {
+                
+                HStack {
+                    Button {
+                     // Closing View...
+                        withAnimation {
+                            sharedData.showFundraiserDetail = false
+                        }
+                    } label: {
+                        Image("arrow_right")
+                            .frame(width: 24, height: 24)
+                    }
+                    
+                    Spacer()
+                    
+                    Image("like_button_off")
+                        .frame(width: 24, height: 24)
+                    
+                    Image("settings_button")
+                        .frame(width: 24, height: 24)
+                    
+                }
+                .padding(.vertical, 20)
+                
                 ScrollView {
                     VStack(spacing: 0) {
-                        Image(model?.cover ?? "cover_campaign")
+                        
+                        //Adding Matched Geometry
+                        Image(sharedData.fundraiserFromHome?.cover ?? "cover_campaign")
                             .resizable()
                             .scaledToFit()
                             .frame(maxWidth: .infinity, maxHeight: 178)
                         
-                        Text(model?.title ?? "")
+                        Text(sharedData.fundraiserFromHome?.title ?? "")
                             .font(.custom(customFonts, size: 20))
                             .fontWeight(.bold)
                             .frame(maxWidth: .infinity, alignment: .leading)
                             .padding(.top, 20)
                         
-                        Text("\(model?.totalDonated ?? 0)+ \("donated".localized())")
+                        Text("\(sharedData.fundraiserFromHome?.totalDonated ?? 0)+ \("donated".localized())")
                             .font(.custom(customFonts, size: 12))
                             .foregroundColor(Color(appGrayColor))
                             .frame(maxWidth: .infinity, alignment: .leading)
                             .padding(.top, 20)
                         
-                        RemainingDonationView(goals: model?.goal ?? 0, raised: model?.raised ?? 0, isBiggerComponent: true)
+                        RemainingDonationView(goals: sharedData.fundraiserFromHome?.goal ?? 0, raised: sharedData.fundraiserFromHome?.raised ?? 0, isBiggerComponent: true)
                         
                         Divider()
                             .padding(.vertical, 20)
@@ -120,13 +145,13 @@ struct FundriserDetailView: View {
                 }
                 .frame(maxWidth: .infinity, maxHeight: 50, alignment: .bottom)
             }.padding(.horizontal, 16)
-        }
+        }.background(Color(.white).ignoresSafeArea())
     }
 }
 
 struct FundriserDetailView_Previews: PreviewProvider {
     
-    @State static var model: FundraiserDO? = FundraiserDO(cover: "cover_campaign_education",
+    static var model: FundraiserDO? = FundraiserDO(cover: "cover_campaign_education",
                                                           title: "Help them for education",
                                                           donatedAvatars: [],
                                                           totalDonated: 55,
@@ -137,6 +162,7 @@ struct FundriserDetailView_Previews: PreviewProvider {
                                                           organiser: nil)
     
     static var previews: some View {
-        FundriserDetailView(model: $model)
+        FundriserDetailView()
+            .environmentObject(SharedDataModel(fundraiser: model))
     }
 }
