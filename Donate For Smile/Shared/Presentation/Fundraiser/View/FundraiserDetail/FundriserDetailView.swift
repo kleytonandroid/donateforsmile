@@ -42,11 +42,7 @@ struct FundriserDetailView: View {
                 ScrollView {
                     VStack(spacing: 0) {
                         
-                        //Adding Matched Geometry
-                        Image(sharedData.fundraiserFromHome?.cover ?? "cover_campaign")
-                            .resizable()
-                            .scaledToFit()
-                            .frame(maxWidth: .infinity, maxHeight: 178)
+                        CoverFundraiserDetailView(cover: sharedData.fundraiserFromHome?.cover, category: sharedData.fundraiserFromHome?.category)
                         
                         Text(sharedData.fundraiserFromHome?.title ?? "")
                             .font(.custom(customFonts, size: 20))
@@ -54,9 +50,8 @@ struct FundriserDetailView: View {
                             .frame(maxWidth: .infinity, alignment: .leading)
                             .padding(.top, 20)
                         
-                        Text("\(sharedData.fundraiserFromHome?.totalDonated ?? 0)+ \("donated".localized())")
-                            .font(.custom(customFonts, size: 12))
-                            .foregroundColor(Color(appGrayColor))
+                        TotalDonatedView(donatedAvatars: sharedData.fundraiserFromHome?.donatedAvatars ?? [],
+                                         totalDonated: sharedData.fundraiserFromHome?.totalDonated ?? 0)
                             .frame(maxWidth: .infinity, alignment: .leading)
                             .padding(.top, 20)
                         
@@ -153,7 +148,10 @@ struct FundriserDetailView_Previews: PreviewProvider {
     
     static var model: FundraiserDO? = FundraiserDO(cover: "cover_campaign_education",
                                                           title: "Help them for education",
-                                                          donatedAvatars: [],
+                                                          donatedAvatars: ["avatar_profile_example",
+                                                                           "avatar_profile_example",
+                                                                           "avatar_profile_example",
+                                                                           "avatar_profile_example"],
                                                           totalDonated: 55,
                                                           category: .education,
                                                           goal: 10000,

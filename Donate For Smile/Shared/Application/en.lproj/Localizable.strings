@@ -29,3 +29,6 @@
 "description" = "description";
 "comments" = "comments";
 "donate_now" = "donate now";
+
+// Category Filter
+"categories" = "categories";
