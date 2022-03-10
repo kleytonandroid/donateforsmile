@@ -5,7 +5,7 @@
 //  Created by Kleyton Santos on 15/02/22.
 //
 
-public enum Category: String {
+public enum Category: String, CaseIterable {
     case education,
          medical,
          events,

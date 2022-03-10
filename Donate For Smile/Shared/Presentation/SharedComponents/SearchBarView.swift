@@ -9,6 +9,8 @@ import SwiftUI
 
 struct SearchBarView: View {
     @Binding var searchText: String
+    @State private var isPresented = false
+    @State var categorySelected = ""
     var body: some View {
         
         VStack {
@@ -30,10 +32,10 @@ struct SearchBarView: View {
                     .padding(.vertical, 13)
                 
                 Button {
-                    // Do the filter action here
+                    isPresented.toggle()
                 } label: {
                     Image("filter_search_icon")
-                        .foregroundColor(Color(appGreenColor))
+                        .foregroundColor(Color(categorySelected.isEmpty ? appGrayColor : appGreenColor))
                         .frame(width: 24, height: 24)
                 }
             }
@@ -43,7 +45,13 @@ struct SearchBarView: View {
                     .stroke(Color(appGrayBorderColor), lineWidth: 1)
                     .opacity(0.3)
             )
-        }.frame(maxWidth: .infinity, maxHeight: 60)
+        }
+        .fullScreenCover(isPresented: $isPresented, onDismiss: {
+            
+        }, content: {
+            FilterCategoriesView(isPresented: $isPresented, categorySelected: $categorySelected)
+        })
+        .frame(maxWidth: .infinity, maxHeight: 60)
     }
 }
 
