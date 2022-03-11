@@ -13,6 +13,7 @@ struct SettingsView: View {
             Text("settings".localizedFirstUpperCased())
                 .font(.custom(customFonts, size: 20))
                 .bold()
+                .padding()
             
             ScrollView(showsIndicators: false) {
                 VStack(spacing: 30) {

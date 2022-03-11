@@ -33,7 +33,7 @@ struct ContentView: View {
                         Label("settings".localizedFirstUpperCased(), image: "settings_tab_icon")
                     }
                 
-                Text("Hello World")
+                ProfileView()
                     .tabItem {
                         Label("profile".localizedFirstUpperCased(), image: "profile_tab_icon")
                     }

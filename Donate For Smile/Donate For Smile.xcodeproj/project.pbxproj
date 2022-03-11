@@ -47,6 +47,7 @@
 		671D558727DBC43F003EF0C8 /* SavedListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 671D558627DBC43F003EF0C8 /* SavedListView.swift */; };
 		671D558B27DBC499003EF0C8 /* SavedListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 671D558A27DBC499003EF0C8 /* SavedListViewModel.swift */; };
 		671D558F27DBC6AC003EF0C8 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 671D558E27DBC6AC003EF0C8 /* SettingsView.swift */; };
+		671D559127DBCFB3003EF0C8 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 671D559027DBCFB3003EF0C8 /* ProfileView.swift */; };
 		672E15D627DA92FB007FE2B7 /* AvatarDonatedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 672E15D527DA92FB007FE2B7 /* AvatarDonatedView.swift */; };
 		672E15D727DA92FB007FE2B7 /* AvatarDonatedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 672E15D527DA92FB007FE2B7 /* AvatarDonatedView.swift */; };
 		672E15D827DA92FB007FE2B7 /* AvatarDonatedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 672E15D527DA92FB007FE2B7 /* AvatarDonatedView.swift */; };
@@ -160,6 +161,7 @@
 		671D558627DBC43F003EF0C8 /* SavedListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SavedListView.swift; sourceTree = "<group>"; };
 		671D558A27DBC499003EF0C8 /* SavedListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SavedListViewModel.swift; sourceTree = "<group>"; };
 		671D558E27DBC6AC003EF0C8 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		671D559027DBCFB3003EF0C8 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
 		672E15D527DA92FB007FE2B7 /* AvatarDonatedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AvatarDonatedView.swift; sourceTree = "<group>"; };
 		672E15DA27DA93B6007FE2B7 /* CoverFundraiserDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoverFundraiserDetailView.swift; sourceTree = "<group>"; };
 		672E15DF27DA9540007FE2B7 /* TotalDonatedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TotalDonatedView.swift; sourceTree = "<group>"; };
@@ -261,6 +263,7 @@
 				67BC883727B2DF660082B385 /* SharedComponents */,
 				67BC881A27B1E2470082B385 /* Fundraiser */,
 				67183DB527BE926700932580 /* SharedDataModel.swift */,
+				671D559027DBCFB3003EF0C8 /* ProfileView.swift */,
 			);
 			path = Presentation;
 			sourceTree = "<group>";
@@ -761,6 +764,7 @@
 				672E15E027DA9540007FE2B7 /* TotalDonatedView.swift in Sources */,
 				67BC883E27B2E5DE0082B385 /* FundraiserListView.swift in Sources */,
 				672E15D627DA92FB007FE2B7 /* AvatarDonatedView.swift in Sources */,
+				671D559127DBCFB3003EF0C8 /* ProfileView.swift in Sources */,
 				671D558427DBAB4B003EF0C8 /* NewCampaignListView.swift in Sources */,
 				672E15DB27DA93B6007FE2B7 /* CoverFundraiserDetailView.swift in Sources */,
 				670A854E27B59F6C0095F24E /* MockEntities.swift in Sources */,

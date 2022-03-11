@@ -54,3 +54,13 @@
 "location" = "Location";
 "security_and_privacy" = "Security and privacy";
 "app_settings" = "App settings";
+
+//Profile
+"profile" = "Profile";
+"edit_profile" = "Edit profile";
+"my_campaign" = "My campaigns";
+"history" = "History";
+"achievements" = "Achievements";
+"campaigns" = "Campaigns";
+"donated" = "Donated";
+"generated" = "Generated";
