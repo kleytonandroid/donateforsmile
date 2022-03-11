@@ -40,6 +40,7 @@ struct FundraiserItem: View {
                 HStack {
                     Text(model.title)
                         .font(.custom(customFonts, size: 16))
+                        .foregroundColor(.black)
                         .lineLimit(1)
                     
                     Spacer()
@@ -59,8 +60,8 @@ struct FundraiserItem: View {
                 Text("\(model.description) \(Text("read_more".localizedFirstUpperCased()).foregroundColor(Color(appGreenColor)))")
                     .font(.custom(customFonts, size: 14))
                     .foregroundColor(Color(appGrayColor))
-                    .frame(maxWidth: .infinity, alignment: .leading)
                     .lineLimit(3)
+                    .frame(maxWidth: .infinity, alignment: .leading)
                     .padding(.top, 13)
                 
                 RemainingDonationView(goals: model.goal, raised: model.raised)

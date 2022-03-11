@@ -8,14 +8,14 @@
 import Foundation
 struct FundraiserDO: Identifiable {
     var id = UUID()
-    var cover: String
-    var title: String
-    var donatedAvatars: [String]
-    var totalDonated: Int
-    var category: Category
-    var goal: Float
-    var raised: Float
-    var description: String
+    var cover: String = ""
+    var title: String = ""
+    var donatedAvatars: [String] = []
+    var totalDonated: Int = 0
+    var category: Category = .others
+    var goal: Float = 0.0
+    var raised: Float = 0.0
+    var description: String = ""
     
     var organiser: OrganiserDO?
 }

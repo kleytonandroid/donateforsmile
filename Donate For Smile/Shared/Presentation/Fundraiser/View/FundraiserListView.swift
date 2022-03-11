@@ -9,29 +9,14 @@ import SwiftUI
 
 struct FundraiserListView: View {
     
-    @StateObject var viewModel = FundraiserListViewModel()
+    var filterCategory: String = ""
     
-    @EnvironmentObject var sharedData: SharedDataModel
+    @StateObject var viewModel = FundraiserListViewModel()
     
     @State var searchText: String = ""
     
     var body: some View {
-        VStack {
-            ZStack {
-                Button {
-                 // Closing View...
-                } label: {
-                    Image("arrow_right")
-                        .frame(width: 24, height: 24)
-                }.frame(maxWidth: .infinity, alignment: .leading)
-                
-                Text("All Fundraisers")
-                    .font(.custom(customFonts, size: 20))
-                    .fontWeight(.semibold)
-            }
-            .padding(.horizontal, 16)
-            .padding(.vertical, 20)
-            
+        VStack(spacing: 0) {
             ScrollView(showsIndicators: false) {
                 VStack(spacing: 0) {
                     SearchBarView(searchText: $searchText)
@@ -41,15 +26,9 @@ struct FundraiserListView: View {
                     
                     LazyVStack(spacing: 20) {
                         ForEach(viewModel.fundraisers) { fundRaiser in
-                            
-                            FundraiserItem(model: fundRaiser)
-                                .onTapGesture {
-                                    withAnimation(.easeInOut) {
-                                        sharedData.fundraiserFromHome = fundRaiser
-                                        sharedData.showFundraiserDetail.toggle()
-                                    }
-                                }
-                            
+                            NavigationLink(destination: FundraiserDetailView(model: fundRaiser)) {
+                                FundraiserItem(model: fundRaiser)
+                            }.buttonStyle(PlainButtonStyle())
                         }
                     }.padding(.horizontal, 16)
                 }
@@ -58,11 +37,13 @@ struct FundraiserListView: View {
         .onAppear {
             viewModel.fetchFundraisers()
         }
+        .navigationBarTitleDisplayMode(.inline)
+        .navigationBarTitle(filterCategory.isEmpty ? "all_fundraiser".localizedFirstUpperCased() : filterCategory.localizedFirstUpperCased())
     }
 }
 
 struct FoundraiserListView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        FundraiserListView()
     }
 }

@@ -1,5 +1,5 @@
 //
-//  FundriserDetailView.swift
+//  FundraiserDetailView.swift
 //  Donate For Smile
 //
 //  Created by Kleyton Santos on 08/02/22.
@@ -7,55 +7,32 @@
 
 import SwiftUI
 
-struct FundriserDetailView: View {
+struct FundraiserDetailView: View {
     
-    @EnvironmentObject var sharedData: SharedDataModel
+    var model: FundraiserDO
     
     @State private var descriptionTabSelected = true
     
     var body: some View {
         ZStack {
             VStack(spacing: 0) {
-                
-                HStack {
-                    Button {
-                     // Closing View...
-                        withAnimation {
-                            sharedData.showFundraiserDetail = false
-                        }
-                    } label: {
-                        Image("arrow_right")
-                            .frame(width: 24, height: 24)
-                    }
-                    
-                    Spacer()
-                    
-                    Image("like_button_off")
-                        .frame(width: 24, height: 24)
-                    
-                    Image("settings_button")
-                        .frame(width: 24, height: 24)
-                    
-                }
-                .padding(.vertical, 20)
-                
                 ScrollView {
                     VStack(spacing: 0) {
                         
-                        CoverFundraiserDetailView(cover: sharedData.fundraiserFromHome?.cover, category: sharedData.fundraiserFromHome?.category)
+                        CoverFundraiserDetailView(cover: model.cover, category: model.category)
                         
-                        Text(sharedData.fundraiserFromHome?.title ?? "")
+                        Text(model.title)
                             .font(.custom(customFonts, size: 20))
                             .fontWeight(.bold)
                             .frame(maxWidth: .infinity, alignment: .leading)
                             .padding(.top, 20)
                         
-                        TotalDonatedView(donatedAvatars: sharedData.fundraiserFromHome?.donatedAvatars ?? [],
-                                         totalDonated: sharedData.fundraiserFromHome?.totalDonated ?? 0)
+                        TotalDonatedView(donatedAvatars: model.donatedAvatars,
+                                         totalDonated: model.totalDonated)
                             .frame(maxWidth: .infinity, alignment: .leading)
                             .padding(.top, 20)
                         
-                        RemainingDonationView(goals: sharedData.fundraiserFromHome?.goal ?? 0, raised: sharedData.fundraiserFromHome?.raised ?? 0, isBiggerComponent: true)
+                        RemainingDonationView(goals: model.goal,raised: model.raised, isBiggerComponent: true)
                         
                         Divider()
                             .padding(.vertical, 20)
@@ -140,27 +117,27 @@ struct FundriserDetailView: View {
                 }
                 .frame(maxWidth: .infinity, maxHeight: 50, alignment: .bottom)
             }.padding(.horizontal, 16)
-        }.background(Color(.white).ignoresSafeArea())
+        }
+        .navigationTitle("")
     }
 }
 
-struct FundriserDetailView_Previews: PreviewProvider {
+struct FundraiserDetailView_Previews: PreviewProvider {
     
-    static var model: FundraiserDO? = FundraiserDO(cover: "cover_campaign_education",
-                                                          title: "Help them for education",
-                                                          donatedAvatars: ["avatar_profile_example",
-                                                                           "avatar_profile_example",
-                                                                           "avatar_profile_example",
-                                                                           "avatar_profile_example"],
-                                                          totalDonated: 55,
-                                                          category: .education,
-                                                          goal: 10000,
-                                                          raised: 3300,
-                                                          description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit dolor sit  consectetur... ",
-                                                          organiser: nil)
+    static var model: FundraiserDO = FundraiserDO(cover: "cover_campaign_education",
+                                                  title: "Help them for education",
+                                                  donatedAvatars: ["avatar_profile_example",
+                                                                   "avatar_profile_example",
+                                                                   "avatar_profile_example",
+                                                                   "avatar_profile_example"],
+                                                  totalDonated: 55,
+                                                  category: .education,
+                                                  goal: 10000,
+                                                  raised: 3300,
+                                                  description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit dolor sit  consectetur... ",
+                                                  organiser: nil)
     
     static var previews: some View {
-        FundriserDetailView()
-            .environmentObject(SharedDataModel(fundraiser: model))
+        FundraiserDetailView(model: model)
     }
 }
