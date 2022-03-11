@@ -35,7 +35,6 @@ struct SavedListView: View {
             viewModel.fetchFundraisers()
         }
         .navigationBarTitleDisplayMode(.inline)
-        .navigationBarTitle("saved".localizedFirstUpperCased())
     }
 }
 
