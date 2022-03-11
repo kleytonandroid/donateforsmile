@@ -8,6 +8,9 @@
 import SwiftUI
 
 struct HomeView: View {
+    
+    @StateObject var viewModel = HomeViewModel()
+    
     @State var searchText: String = ""
     
     var body: some View {
@@ -16,19 +19,34 @@ struct HomeView: View {
             
             ScrollView(showsIndicators: false) {
                 VStack(spacing: 0) {
-                
+                    
                     SearchBarView(searchText: $searchText)
                         .frame(height: 60)
                         .padding(.horizontal, 16)
-                
+                    
                     HomeCategoriesView()
                     
                     VideoCoverView()
-                        .padding(.top, 10)
+                        .padding(.top, 16)
                         .padding(.horizontal, 16)
-                        
-                    }
+                    
+                    TopFundRaisersView(topFundraisers: $viewModel.topFundraisers)
+                        .padding(.top, 28)
+                        .padding(.horizontal, 16)
+                    
+                    NewCampaignListView(newFundraisers: $viewModel.newCampaigns)
+                        .padding(.top, 28)
+                        .padding(.horizontal, 16)
+                    
+                    Spacer()
+                        .frame(height: 100)
+                    
+                }
             }.frame(maxHeight: .infinity)
+        }
+        .onAppear {
+            viewModel.fetchTopFundraisers()
+            viewModel.fetchNewCampaigns()
         }
         .navigationBarHidden(true)
     }

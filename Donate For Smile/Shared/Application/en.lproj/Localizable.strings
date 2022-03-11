@@ -38,6 +38,12 @@
 "campaigns_category" = "campaigns";
 "donate_goods_category" = "Donate Goods";
 "charity_category" = "charity";
+"top_fundraisers" = "Top Fundraisers";
+"see_all" = "See All";
+"new_campaigns" = "New Campaigns";
 
 //Fundraiser List
 "all_fundraiser" = "All Fundraiser";
+
+//Saved
+"saved" = "Saved";

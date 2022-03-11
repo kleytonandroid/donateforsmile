@@ -38,6 +38,10 @@
 "campaigns_category" = "campañas";
 "donate_goods_category" = "Donar Bienes";
 "charity_category" = "Caridad";
+"top_fundraisers" = "Top Angariações";
+"see_all" = "Ver Todos";
+"new_campaigns" = "Nuevas Campañas";
 
 //Fundraiser List
 "all_fundraiser" = "Todas as angariações";
+"saved" = "Favoritos";
