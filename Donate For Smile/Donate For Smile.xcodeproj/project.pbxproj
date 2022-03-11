@@ -7,10 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		670A849327B314E30095F24E /* FundriserDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 670A849227B314E30095F24E /* FundriserDetailView.swift */; };
-		670A849427B314E30095F24E /* FundriserDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 670A849227B314E30095F24E /* FundriserDetailView.swift */; };
-		670A849527B314E30095F24E /* FundriserDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 670A849227B314E30095F24E /* FundriserDetailView.swift */; };
-		670A849627B314E30095F24E /* FundriserDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 670A849227B314E30095F24E /* FundriserDetailView.swift */; };
+		670A849327B314E30095F24E /* FundraiserDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 670A849227B314E30095F24E /* FundraiserDetailView.swift */; };
+		670A849427B314E30095F24E /* FundraiserDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 670A849227B314E30095F24E /* FundraiserDetailView.swift */; };
+		670A849527B314E30095F24E /* FundraiserDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 670A849227B314E30095F24E /* FundraiserDetailView.swift */; };
+		670A849627B314E30095F24E /* FundraiserDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 670A849227B314E30095F24E /* FundraiserDetailView.swift */; };
 		670A849827B316A70095F24E /* RemainingDonationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 670A849727B316A70095F24E /* RemainingDonationView.swift */; };
 		670A849927B316A70095F24E /* RemainingDonationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 670A849727B316A70095F24E /* RemainingDonationView.swift */; };
 		670A849A27B316A70095F24E /* RemainingDonationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 670A849727B316A70095F24E /* RemainingDonationView.swift */; };
@@ -50,6 +50,14 @@
 		672E15E127DA9540007FE2B7 /* TotalDonatedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 672E15DF27DA9540007FE2B7 /* TotalDonatedView.swift */; };
 		672E15E227DA9540007FE2B7 /* TotalDonatedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 672E15DF27DA9540007FE2B7 /* TotalDonatedView.swift */; };
 		672E15E327DA9540007FE2B7 /* TotalDonatedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 672E15DF27DA9540007FE2B7 /* TotalDonatedView.swift */; };
+		672E15E927DACF81007FE2B7 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 672E15E827DACF81007FE2B7 /* HomeView.swift */; };
+		672E15EA27DACF81007FE2B7 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 672E15E827DACF81007FE2B7 /* HomeView.swift */; };
+		672E15EB27DACF81007FE2B7 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 672E15E827DACF81007FE2B7 /* HomeView.swift */; };
+		672E15EC27DACF81007FE2B7 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 672E15E827DACF81007FE2B7 /* HomeView.swift */; };
+		672E15F327DB8761007FE2B7 /* HomeCategoriesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 672E15F227DB8761007FE2B7 /* HomeCategoriesView.swift */; };
+		672E15F427DB8761007FE2B7 /* HomeCategoriesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 672E15F227DB8761007FE2B7 /* HomeCategoriesView.swift */; };
+		672E15F527DB8761007FE2B7 /* HomeCategoriesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 672E15F227DB8761007FE2B7 /* HomeCategoriesView.swift */; };
+		672E15F627DB8761007FE2B7 /* HomeCategoriesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 672E15F227DB8761007FE2B7 /* HomeCategoriesView.swift */; };
 		67686B2627BC2D66005F16AB /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 67686B2927BC2D66005F16AB /* Localizable.strings */; };
 		67686B2727BC2D66005F16AB /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 67686B2927BC2D66005F16AB /* Localizable.strings */; };
 		67686B2E27BC2E66005F16AB /* String+Localizable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67686B2D27BC2E66005F16AB /* String+Localizable.swift */; };
@@ -124,7 +132,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		670A849227B314E30095F24E /* FundriserDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FundriserDetailView.swift; sourceTree = "<group>"; };
+		670A849227B314E30095F24E /* FundraiserDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FundraiserDetailView.swift; sourceTree = "<group>"; };
 		670A849727B316A70095F24E /* RemainingDonationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemainingDonationView.swift; sourceTree = "<group>"; };
 		670A849D27B36DC00095F24E /* FundraiserDO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FundraiserDO.swift; sourceTree = "<group>"; };
 		670A84A227B36E420095F24E /* OrganiserDO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrganiserDO.swift; sourceTree = "<group>"; };
@@ -137,6 +145,8 @@
 		672E15D527DA92FB007FE2B7 /* AvatarDonatedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AvatarDonatedView.swift; sourceTree = "<group>"; };
 		672E15DA27DA93B6007FE2B7 /* CoverFundraiserDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoverFundraiserDetailView.swift; sourceTree = "<group>"; };
 		672E15DF27DA9540007FE2B7 /* TotalDonatedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TotalDonatedView.swift; sourceTree = "<group>"; };
+		672E15E827DACF81007FE2B7 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		672E15F227DB8761007FE2B7 /* HomeCategoriesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCategoriesView.swift; sourceTree = "<group>"; };
 		67686B2827BC2D66005F16AB /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		67686B2A27BC2D6A005F16AB /* pt-BR */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "pt-BR"; path = "pt-BR.lproj/Localizable.strings"; sourceTree = "<group>"; };
 		67686B2B27BC2D6B005F16AB /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/Localizable.strings; sourceTree = "<group>"; };
@@ -223,6 +233,7 @@
 		670A853A27B553800095F24E /* Presentation */ = {
 			isa = PBXGroup;
 			children = (
+				672E15E527DACF67007FE2B7 /* Home */,
 				67183DBA27BFEA4100932580 /* Categories */,
 				67686B2C27BC2E14005F16AB /* Extensions */,
 				67BC882027B1E27A0082B385 /* Helpers.swift */,
@@ -353,12 +364,29 @@
 		672E15E427DA9748007FE2B7 /* FundraiserDetail */ = {
 			isa = PBXGroup;
 			children = (
-				670A849227B314E30095F24E /* FundriserDetailView.swift */,
+				670A849227B314E30095F24E /* FundraiserDetailView.swift */,
 				672E15DA27DA93B6007FE2B7 /* CoverFundraiserDetailView.swift */,
 				672E15DF27DA9540007FE2B7 /* TotalDonatedView.swift */,
 				672E15D527DA92FB007FE2B7 /* AvatarDonatedView.swift */,
 			);
 			path = FundraiserDetail;
+			sourceTree = "<group>";
+		};
+		672E15E527DACF67007FE2B7 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				672E15E627DACF6F007FE2B7 /* View */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		672E15E627DACF6F007FE2B7 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				672E15E827DACF81007FE2B7 /* HomeView.swift */,
+				672E15F227DB8761007FE2B7 /* HomeCategoriesView.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 		67686B2C27BC2E14005F16AB /* Extensions */ = {
@@ -651,14 +679,16 @@
 				670A854E27B59F6C0095F24E /* MockEntities.swift in Sources */,
 				670A854B27B5811B0095F24E /* FetchFundraiserUseCase.swift in Sources */,
 				67BC87F027B1BD030082B385 /* Donate_For_SmileApp.swift in Sources */,
-				670A849327B314E30095F24E /* FundriserDetailView.swift in Sources */,
+				670A849327B314E30095F24E /* FundraiserDetailView.swift in Sources */,
 				670A849E27B36DC00095F24E /* FundraiserDO.swift in Sources */,
 				67183DBC27BFEA5E00932580 /* FilterCategoriesView.swift in Sources */,
 				670A849827B316A70095F24E /* RemainingDonationView.swift in Sources */,
 				67686B3427BC38FA005F16AB /* Category.swift in Sources */,
+				672E15F327DB8761007FE2B7 /* HomeCategoriesView.swift in Sources */,
 				67BC882627B1E42E0082B385 /* ProgressBarView.swift in Sources */,
 				67686B2E27BC2E66005F16AB /* String+Localizable.swift in Sources */,
 				670A854827B57ED00095F24E /* FundraiserListViewModel.swift in Sources */,
+				672E15E927DACF81007FE2B7 /* HomeView.swift in Sources */,
 				67BC883927B2DF800082B385 /* SearchBarView.swift in Sources */,
 				67BC882127B1E27A0082B385 /* Helpers.swift in Sources */,
 			);
@@ -668,13 +698,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				672E15F427DB8761007FE2B7 /* HomeCategoriesView.swift in Sources */,
 				67BC87F327B1BD030082B385 /* ContentView.swift in Sources */,
 				67BC881D27B1E2650082B385 /* FundraiserItem.swift in Sources */,
 				670A84A427B36E420095F24E /* OrganiserDO.swift in Sources */,
 				67BC883F27B2E5DE0082B385 /* FundraiserListView.swift in Sources */,
 				67BC87F127B1BD030082B385 /* Donate_For_SmileApp.swift in Sources */,
 				67183DB727BE926700932580 /* SharedDataModel.swift in Sources */,
-				670A849427B314E30095F24E /* FundriserDetailView.swift in Sources */,
+				670A849427B314E30095F24E /* FundraiserDetailView.swift in Sources */,
 				672E15D727DA92FB007FE2B7 /* AvatarDonatedView.swift in Sources */,
 				670A849F27B36DC00095F24E /* FundraiserDO.swift in Sources */,
 				670A849927B316A70095F24E /* RemainingDonationView.swift in Sources */,
@@ -683,6 +714,7 @@
 				67BC882227B1E27A0082B385 /* Helpers.swift in Sources */,
 				67183DBD27BFEA5E00932580 /* FilterCategoriesView.swift in Sources */,
 				67183DDE27C6F0DC00932580 /* CategoryItemView.swift in Sources */,
+				672E15EA27DACF81007FE2B7 /* HomeView.swift in Sources */,
 				672E15E127DA9540007FE2B7 /* TotalDonatedView.swift in Sources */,
 				672E15DC27DA93B6007FE2B7 /* CoverFundraiserDetailView.swift in Sources */,
 				67686B3227BC31A7005F16AB /* StringProtocol+Shortcuts.swift in Sources */,
@@ -704,12 +736,14 @@
 				67BC884027B2E5DE0082B385 /* FundraiserListView.swift in Sources */,
 				67BC87E127B1BD030082B385 /* Tests_iOS.swift in Sources */,
 				672E15E227DA9540007FE2B7 /* TotalDonatedView.swift in Sources */,
-				670A849527B314E30095F24E /* FundriserDetailView.swift in Sources */,
+				672E15EB27DACF81007FE2B7 /* HomeView.swift in Sources */,
+				670A849527B314E30095F24E /* FundraiserDetailView.swift in Sources */,
 				670A84A027B36DC00095F24E /* FundraiserDO.swift in Sources */,
 				672E15DD27DA93B6007FE2B7 /* CoverFundraiserDetailView.swift in Sources */,
 				670A849A27B316A70095F24E /* RemainingDonationView.swift in Sources */,
 				67BC882827B1E42E0082B385 /* ProgressBarView.swift in Sources */,
 				67BC883B27B2DF800082B385 /* SearchBarView.swift in Sources */,
+				672E15F527DB8761007FE2B7 /* HomeCategoriesView.swift in Sources */,
 				67BC882327B1E27A0082B385 /* Helpers.swift in Sources */,
 				67183DBE27BFEA5E00932580 /* FilterCategoriesView.swift in Sources */,
 			);
@@ -728,12 +762,14 @@
 				67BC884127B2E5DE0082B385 /* FundraiserListView.swift in Sources */,
 				67BC87ED27B1BD030082B385 /* Tests_macOS.swift in Sources */,
 				672E15E327DA9540007FE2B7 /* TotalDonatedView.swift in Sources */,
-				670A849627B314E30095F24E /* FundriserDetailView.swift in Sources */,
+				672E15EC27DACF81007FE2B7 /* HomeView.swift in Sources */,
+				670A849627B314E30095F24E /* FundraiserDetailView.swift in Sources */,
 				670A84A127B36DC00095F24E /* FundraiserDO.swift in Sources */,
 				672E15DE27DA93B6007FE2B7 /* CoverFundraiserDetailView.swift in Sources */,
 				670A849B27B316A70095F24E /* RemainingDonationView.swift in Sources */,
 				67BC882927B1E42E0082B385 /* ProgressBarView.swift in Sources */,
 				67BC883C27B2DF800082B385 /* SearchBarView.swift in Sources */,
+				672E15F627DB8761007FE2B7 /* HomeCategoriesView.swift in Sources */,
 				67BC882427B1E27A0082B385 /* Helpers.swift in Sources */,
 				67183DBF27BFEA5E00932580 /* FilterCategoriesView.swift in Sources */,
 			);

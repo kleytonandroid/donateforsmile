@@ -32,3 +32,12 @@
 
 // Category Filter
 "categories" = "categories";
+
+//HomeView
+"all_category" = "all";
+"campaigns_category" = "campaigns";
+"donate_goods_category" = "Donate Goods";
+"charity_category" = "charity";
+
+//Fundraiser List
+"all_fundraiser" = "All Fundraiser";

@@ -32,3 +32,12 @@
 
 // Category Filter
 "categories" = "Categorias";
+
+//HomeView
+"all_category" = "Todos";
+"campaigns_category" = "Campanhas";
+"donate_goods_category" = "Doação de bens";
+"charity_category" = "Caridade";
+
+//Fundraiser List
+"all_fundraiser" = "Todas Arrecadações";
