@@ -23,12 +23,12 @@ struct ContentView: View {
                     .padding(.top, 20)
                     .ignoresSafeArea()
                 
-                Text("Hello World")
+                SavedListView()
                     .tabItem {
                         Label("saved".localizedFirstUpperCased(), image: "heart_tab_icon")
                     }
                 
-                Text("Hello World")
+                SettingsView()
                     .tabItem {
                         Label("settings".localizedFirstUpperCased(), image: "settings_tab_icon")
                     }

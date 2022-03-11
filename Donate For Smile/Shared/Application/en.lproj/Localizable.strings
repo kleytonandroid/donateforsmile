@@ -47,3 +47,10 @@
 
 //Saved
 "saved" = "Saved";
+
+//Setings
+"settings" = "Settings";
+"notification" = "Notification";
+"location" = "Location";
+"security_and_privacy" = "Security and privacy";
+"app_settings" = "App settings";

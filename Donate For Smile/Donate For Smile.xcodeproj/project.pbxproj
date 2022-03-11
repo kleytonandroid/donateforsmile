@@ -44,6 +44,9 @@
 		671D558027DBA578003EF0C8 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 671D557F27DBA578003EF0C8 /* HomeViewModel.swift */; };
 		671D558227DBAAA2003EF0C8 /* TopFundRaisersView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 671D558127DBAAA2003EF0C8 /* TopFundRaisersView.swift */; };
 		671D558427DBAB4B003EF0C8 /* NewCampaignListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 671D558327DBAB4B003EF0C8 /* NewCampaignListView.swift */; };
+		671D558727DBC43F003EF0C8 /* SavedListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 671D558627DBC43F003EF0C8 /* SavedListView.swift */; };
+		671D558B27DBC499003EF0C8 /* SavedListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 671D558A27DBC499003EF0C8 /* SavedListViewModel.swift */; };
+		671D558F27DBC6AC003EF0C8 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 671D558E27DBC6AC003EF0C8 /* SettingsView.swift */; };
 		672E15D627DA92FB007FE2B7 /* AvatarDonatedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 672E15D527DA92FB007FE2B7 /* AvatarDonatedView.swift */; };
 		672E15D727DA92FB007FE2B7 /* AvatarDonatedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 672E15D527DA92FB007FE2B7 /* AvatarDonatedView.swift */; };
 		672E15D827DA92FB007FE2B7 /* AvatarDonatedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 672E15D527DA92FB007FE2B7 /* AvatarDonatedView.swift */; };
@@ -154,6 +157,9 @@
 		671D557F27DBA578003EF0C8 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
 		671D558127DBAAA2003EF0C8 /* TopFundRaisersView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopFundRaisersView.swift; sourceTree = "<group>"; };
 		671D558327DBAB4B003EF0C8 /* NewCampaignListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewCampaignListView.swift; sourceTree = "<group>"; };
+		671D558627DBC43F003EF0C8 /* SavedListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SavedListView.swift; sourceTree = "<group>"; };
+		671D558A27DBC499003EF0C8 /* SavedListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SavedListViewModel.swift; sourceTree = "<group>"; };
+		671D558E27DBC6AC003EF0C8 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 		672E15D527DA92FB007FE2B7 /* AvatarDonatedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AvatarDonatedView.swift; sourceTree = "<group>"; };
 		672E15DA27DA93B6007FE2B7 /* CoverFundraiserDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoverFundraiserDetailView.swift; sourceTree = "<group>"; };
 		672E15DF27DA9540007FE2B7 /* TotalDonatedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TotalDonatedView.swift; sourceTree = "<group>"; };
@@ -245,6 +251,8 @@
 		670A853A27B553800095F24E /* Presentation */ = {
 			isa = PBXGroup;
 			children = (
+				671D558C27DBC69B003EF0C8 /* Settings */,
+				671D558527DBC42F003EF0C8 /* Saved */,
 				672E15F727DB9D75007FE2B7 /* Video */,
 				672E15E527DACF67007FE2B7 /* Home */,
 				67183DBA27BFEA4100932580 /* Categories */,
@@ -380,6 +388,47 @@
 				671D557F27DBA578003EF0C8 /* HomeViewModel.swift */,
 			);
 			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		671D558527DBC42F003EF0C8 /* Saved */ = {
+			isa = PBXGroup;
+			children = (
+				671D558927DBC47C003EF0C8 /* ViewModel */,
+				671D558827DBC476003EF0C8 /* View */,
+			);
+			path = Saved;
+			sourceTree = "<group>";
+		};
+		671D558827DBC476003EF0C8 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				671D558627DBC43F003EF0C8 /* SavedListView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		671D558927DBC47C003EF0C8 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				671D558A27DBC499003EF0C8 /* SavedListViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		671D558C27DBC69B003EF0C8 /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				671D558D27DBC6A1003EF0C8 /* View */,
+			);
+			path = Settings;
+			sourceTree = "<group>";
+		};
+		671D558D27DBC6A1003EF0C8 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				671D558E27DBC6AC003EF0C8 /* SettingsView.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 		672E15E427DA9748007FE2B7 /* FundraiserDetail */ = {
@@ -705,6 +754,7 @@
 				67BC881C27B1E2650082B385 /* FundraiserItem.swift in Sources */,
 				67183DB627BE926700932580 /* SharedDataModel.swift in Sources */,
 				67686B3127BC31A7005F16AB /* StringProtocol+Shortcuts.swift in Sources */,
+				671D558F27DBC6AC003EF0C8 /* SettingsView.swift in Sources */,
 				671D557927DB9DF3003EF0C8 /* SwiftUIVideoView.swift in Sources */,
 				670A84A327B36E420095F24E /* OrganiserDO.swift in Sources */,
 				67183DDD27C6F0DC00932580 /* CategoryItemView.swift in Sources */,
@@ -714,6 +764,7 @@
 				671D558427DBAB4B003EF0C8 /* NewCampaignListView.swift in Sources */,
 				672E15DB27DA93B6007FE2B7 /* CoverFundraiserDetailView.swift in Sources */,
 				670A854E27B59F6C0095F24E /* MockEntities.swift in Sources */,
+				671D558B27DBC499003EF0C8 /* SavedListViewModel.swift in Sources */,
 				670A854B27B5811B0095F24E /* FetchFundraiserUseCase.swift in Sources */,
 				67BC87F027B1BD030082B385 /* Donate_For_SmileApp.swift in Sources */,
 				671D558027DBA578003EF0C8 /* HomeViewModel.swift in Sources */,
@@ -724,6 +775,7 @@
 				67686B3427BC38FA005F16AB /* Category.swift in Sources */,
 				672E15F327DB8761007FE2B7 /* HomeCategoriesView.swift in Sources */,
 				67BC882627B1E42E0082B385 /* ProgressBarView.swift in Sources */,
+				671D558727DBC43F003EF0C8 /* SavedListView.swift in Sources */,
 				67686B2E27BC2E66005F16AB /* String+Localizable.swift in Sources */,
 				671D557D27DB9E9A003EF0C8 /* NavigationBarHomeView.swift in Sources */,
 				670A854827B57ED00095F24E /* FundraiserListViewModel.swift in Sources */,

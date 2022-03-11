@@ -45,3 +45,11 @@
 //Fundraiser List
 "all_fundraiser" = "Todas as angariações";
 "saved" = "Favoritos";
+
+
+//Setings
+"settings" = "Ajustes";
+"notification" = "Notificaciones";
+"location" = "Localización";
+"security_and_privacy" = "Seguridad y privacidad";
+"app_settings" = "Ajustes de Aplicacion";
