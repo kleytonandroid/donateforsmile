@@ -12,9 +12,7 @@ struct HomeCategoriesView: View {
     var body: some View {
         
         VStack(spacing: 0) {
-            Text("Categories".localizedFirstUpperCased())
-                .font(.custom(customFonts, size: 16))
-                .fontWeight(.medium)
+            CustomText(text: "Categories", size: 16, fontWeight: .medium)
                 .frame(maxWidth: .infinity, alignment: .leading)
                 .padding(.top, 20)
                 .padding(.horizontal, 16)
@@ -28,8 +26,7 @@ struct HomeCategoriesView: View {
                                     .resizable()
                                     .frame(width: 74, height: 74)
                                 
-                                Text(category.rawValue.localizedFirstUpperCased())
-                                    .font(.custom(customFonts, size: 12))
+                                CustomText(text: category.rawValue, size: 12)
                                     .padding(.top, 16)
                             }
                         }.buttonStyle(PlainButtonStyle())

@@ -23,9 +23,7 @@ struct FilterCategoriesView: View {
                         .frame(width: 24, height: 24)
                 }.frame(maxWidth: .infinity, alignment: .leading)
                 
-                Text("categories".localizedFirstUpperCased())
-                    .font(.custom(customFonts, size: 20))
-                    .fontWeight(.semibold)
+                CustomText(text: "categories", size: 20, fontWeight: .semibold)
             }
             .padding(.vertical, 20)
             
@@ -79,25 +77,22 @@ struct FilterCategoriesView: View {
                     Button {
                         categorySelected = ""
                     } label: {
-                        Text("Reset Filter")
+                        CustomText(text: "reset_filter", size: 18)
                             .padding(.vertical, 16)
                             .padding(.horizontal, 13)
-                            .font(.custom(customFonts, size: 18))
                             .background(.gray)
                             .foregroundColor(.white)
                             .cornerRadius(10)
                     }
                     
                     Spacer()
-                        .frame(width: 40)
-
+                    
                     Button {
                         isPresented.toggle()
                     } label: {
-                        Text("Apply Now")
+                        CustomText(text: "apply_now", size: 18)
                             .padding(.vertical, 16)
                             .padding(.horizontal, 13)
-                            .font(.custom(customFonts, size: 18))
                             .background(Color(appGreenColor))
                             .foregroundColor(.white)
                             .cornerRadius(10)

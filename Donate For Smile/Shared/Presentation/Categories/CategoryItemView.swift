@@ -20,8 +20,7 @@ struct CategoryItemView: View {
                 .foregroundColor(categoryName == categorySelected ? .white : Color(appGreenColor))
                 .padding(.top, 20)
             
-            Text(categoryName.localizedFirstUpperCased())
-                .font(.custom(customFonts, size: 16))
+            CustomText(text: categoryName, size: 16)
                 .padding(.vertical, 20)
                 .foregroundColor(categoryName == categorySelected ? .white : .black)
             

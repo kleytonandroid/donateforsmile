@@ -10,9 +10,7 @@ import SwiftUI
 struct ProfileView: View {
     var body: some View {
         VStack {
-            Text("profile".localizedFirstUpperCased())
-                .font(.custom(customFonts, size: 20))
-                .bold()
+            CustomText(text: "profile", size: 20, fontWeight: .bold)
                 .padding()
             
             ScrollView(showsIndicators: false) {
@@ -24,19 +22,15 @@ struct ProfileView: View {
                         .frame(width: 100, height: 100)
                         .padding(.top, 16)
                     
-                    Text("Lis Haque")
-                        .font(.custom(customFonts, size: 20))
+                    CustomText(text: "Lis Haque", size: 20, fontWeight: .medium)
                         .foregroundColor(Color(appGrayColor))
-                        .fontWeight(.medium)
                         .padding(.top, 16)
                     
                     HStack(spacing: 20) {
                         VStack {
-                            Text("2")
-                                .font(.custom(customFonts, size: 18))
+                            CustomText(text: "2", size: 18)
                             
-                            Text("campaigns".localizedFirstUpperCased())
-                                .font(.custom(customFonts, size: 14))
+                            CustomText(text: "campaigns", size: 14)
                                 .padding(.top, 2)
                         }
                         .foregroundColor(.white)
@@ -45,11 +39,9 @@ struct ProfileView: View {
                         .cornerRadius(10)
                         
                         VStack {
-                            Text("$300")
-                                .font(.custom(customFonts, size: 18))
+                            CustomText(text: "$300", size: 18)
                             
-                            Text("donated".localizedFirstUpperCased())
-                                .font(.custom(customFonts, size: 14))
+                            CustomText(text: "donated", size: 14)
                                 .padding(.top, 2)
                         }
                         .foregroundColor(.white)
@@ -58,11 +50,9 @@ struct ProfileView: View {
                         .cornerRadius(10)
                         
                         VStack {
-                            Text("$50")
-                                .font(.custom(customFonts, size: 18))
+                            CustomText(text: "$50", size: 18)
                             
-                            Text("generated".localizedFirstUpperCased())
-                                .font(.custom(customFonts, size: 14))
+                            CustomText(text: "generated", size: 14)
                                 .padding(.top, 2)
                         }
                         .foregroundColor(.white)
@@ -78,9 +68,8 @@ struct ProfileView: View {
                         HStack {
                             Image("edit_profile_icon")
                                 .frame(width: 24, height: 24)
-                            Text("edit_profile".localizedFirstUpperCased())
-                                .font(.custom(customFonts, size: 18))
-                                .fontWeight(.medium)
+                            
+                            CustomText(text: "edit_profile", size: 18, fontWeight: .medium)
                         }
                         .frame(maxWidth: .infinity, alignment: .leading)
                         .padding(.vertical, 16)
@@ -89,9 +78,8 @@ struct ProfileView: View {
                         HStack {
                             Image("my_campaign_icon")
                                 .frame(width: 24, height: 24)
-                            Text("my_campaign".localizedFirstUpperCased())
-                                .font(.custom(customFonts, size: 18))
-                                .fontWeight(.medium)
+                            
+                            CustomText(text: "my_campaign", size: 18, fontWeight: .medium)
                         }
                         .frame(maxWidth: .infinity, alignment: .leading)
                         .padding(.vertical, 16)
@@ -100,9 +88,8 @@ struct ProfileView: View {
                         HStack {
                             Image("history_icon")
                                 .frame(width: 24, height: 24)
-                            Text("history".localizedFirstUpperCased())
-                                .font(.custom(customFonts, size: 18))
-                                .fontWeight(.medium)
+                            
+                            CustomText(text: "history", size: 18, fontWeight: .medium)
                         }
                         .frame(maxWidth: .infinity, alignment: .leading)
                         .padding(.vertical, 16)
@@ -111,9 +98,8 @@ struct ProfileView: View {
                         HStack {
                             Image("achievements_icon")
                                 .frame(width: 24, height: 24)
-                            Text("achievements".localizedFirstUpperCased())
-                                .font(.custom(customFonts, size: 18))
-                                .fontWeight(.medium)
+                            
+                            CustomText(text: "achievements", size: 18, fontWeight: .medium)
                         }
                         .frame(maxWidth: .infinity, alignment: .leading)
                         .padding(.vertical, 16)

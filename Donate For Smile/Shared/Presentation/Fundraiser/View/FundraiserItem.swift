@@ -38,15 +38,12 @@ struct FundraiserItem: View {
                 }
                 
                 HStack {
-                    Text(model.title)
-                        .font(.custom(customFonts, size: 16))
-                        .foregroundColor(.black)
+                    CustomText(text: model.title, size: 16)
                         .lineLimit(1)
                     
                     Spacer()
                     
-                    Text(model.category.rawValue.localizedFirstUpperCased())
-                        .font(.custom(customFonts, size: 12))
+                    CustomText(text: model.category.rawValue, size: 12)
                         .foregroundColor(Color(appGreenColor))
                         .padding(.horizontal, 12)
                         .padding(.vertical, 5)

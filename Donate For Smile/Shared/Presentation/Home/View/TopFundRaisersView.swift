@@ -14,9 +14,7 @@ struct TopFundRaisersView: View {
     var body: some View {
         VStack {
             HStack {
-                Text("top_fundraisers".localizedFirstUpperCased())
-                    .font(.custom(customFonts, size: 16))
-                    .fontWeight(.medium)
+                CustomText(text: "top_fundraisers", size: 16, fontWeight: .medium)
                 
                 Spacer()
                 

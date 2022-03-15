@@ -21,9 +21,7 @@ struct FundraiserDetailView: View {
                         
                         CoverFundraiserDetailView(cover: model.cover, category: model.category)
                         
-                        Text(model.title)
-                            .font(.custom(customFonts, size: 20))
-                            .fontWeight(.bold)
+                        CustomText(text: model.title, size: 20, fontWeight: .bold)
                             .frame(maxWidth: .infinity, alignment: .leading)
                             .padding(.top, 20)
                         
@@ -37,10 +35,7 @@ struct FundraiserDetailView: View {
                         Divider()
                             .padding(.vertical, 20)
                         
-                        
-                        Text("organizer".localizedFirstUpperCased())
-                            .font(.custom(customFonts, size: 16))
-                            .fontWeight(.medium)
+                        CustomText(text: "organizer", size: 16, fontWeight: .medium)
                             .frame(maxWidth: .infinity, alignment: .leading)
                         
                         HStack(spacing: 0) {
@@ -52,15 +47,14 @@ struct FundraiserDetailView: View {
                                 .padding(.trailing, 14)
                             
                             VStack(alignment: .leading, spacing: 10) {
-                                Text("Monika Islam")
+                                CustomText(text: "Monika Islam", islocalized: false)
                                     .foregroundColor(Color(appBlackColor))
                                 
-                                Text("Dhaka Bangladesh")
+                                CustomText(text: "Dhaka Bangladesh", islocalized: false)
                                     .foregroundColor(Color(appGrayColor))
                                 
                             }
                             .frame(maxWidth: .infinity, alignment: .leading)
-                            .font(.custom(customFonts, size: 14))
                         }
                         .frame(maxWidth: .infinity, alignment: .leading)
                         .padding(.top, 16)
@@ -69,8 +63,7 @@ struct FundraiserDetailView: View {
                             Button {
                                 descriptionTabSelected.toggle()
                             } label: {
-                                Text("description".localizedFirstUpperCased())
-                                    .font(.custom(customFonts, size: 14))
+                                CustomText(text: "description")
                                     .foregroundColor(Color(appGreenColor))
                             }
                             
@@ -79,14 +72,12 @@ struct FundraiserDetailView: View {
                             Button {
                                 descriptionTabSelected.toggle()
                             } label: {
-                                Text("\("comments".localizedFirstUpperCased()) (58)")
-                                    .font(.custom(customFonts, size: 14))
+                                CustomText(text: "\("comments".localizedFirstUpperCased()) (58)", islocalized: false)
                                     .foregroundColor(Color(appGrayColor))
                             }
                         }.padding(.top, 20)
                         
-                        
-                        Text("Lorem ipsum dolor sit amet, consectetur adipiscing elit. Orci nulla sagittis proin faucibus tincidunt. Eu ac feugiat turpis dolor pretium etiam id senectus arcu. Lacus, lorem lorem tristique facilisi tincidunt......Read more")
+                        CustomText(text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Orci nulla sagittis proin faucibus tincidunt. Eu ac feugiat turpis dolor pretium etiam id senectus arcu. Lacus, lorem lorem tristique facilisi tincidunt......Read more", islocalized: false)
                             .font(.custom(customFonts, size: 14))
                             .foregroundColor(Color(appGrayColor))
                             .lineSpacing(8)
@@ -102,9 +93,7 @@ struct FundraiserDetailView: View {
                     Button {
                         // Do action here
                     } label: {
-                        Text("donate_now".localizedFirstCapitalized())
-                            .font(.custom(customFonts, size: 18))
-                            .fontWeight(.bold)
+                        CustomText(text: "donate_now", size: 18, fontWeight: .bold)
                             .foregroundColor(.white)
                             .frame(maxWidth: .infinity, maxHeight: .infinity)
                         
@@ -112,8 +101,6 @@ struct FundraiserDetailView: View {
                     .frame(maxWidth: .infinity, maxHeight: 50, alignment: .center)
                     .background(Color(appGreenColor))
                     .cornerRadius(10)
-                    
-                    
                 }
                 .frame(maxWidth: .infinity, maxHeight: 50, alignment: .bottom)
             }.padding(.horizontal, 16)

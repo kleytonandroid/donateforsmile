@@ -10,9 +10,7 @@ import SwiftUI
 struct SettingsView: View {
     var body: some View {
         VStack {
-            Text("settings".localizedFirstUpperCased())
-                .font(.custom(customFonts, size: 20))
-                .bold()
+            CustomText(text: "settings", size: 20, fontWeight: .bold)
                 .padding()
             
             ScrollView(showsIndicators: false) {
@@ -21,9 +19,8 @@ struct SettingsView: View {
                     HStack {
                         Image("notification_bell_icon")
                             .frame(width: 24, height: 24)
-                        Text("notification".localizedFirstUpperCased())
-                            .font(.custom(customFonts, size: 18))
-                            .fontWeight(.medium)
+                        
+                        CustomText(text: "notification", size: 18, fontWeight: .medium)
                     }
                     .frame(maxWidth: .infinity, alignment: .leading)
                     .padding(.vertical, 25)
@@ -33,9 +30,7 @@ struct SettingsView: View {
                         Image("location_icon")
                             .frame(width: 24, height: 24)
                         
-                        Text("location".localizedFirstUpperCased())
-                            .font(.custom(customFonts, size: 18))
-                            .fontWeight(.medium)
+                        CustomText(text: "location", size: 18, fontWeight: .medium)
                     }
                     .frame(maxWidth: .infinity, alignment: .leading)
                     .padding(.vertical, 25)
@@ -44,9 +39,8 @@ struct SettingsView: View {
                     HStack {
                         Image("security_privacy_icon")
                             .frame(width: 24, height: 24)
-                        Text("security_and_privacy".localizedFirstUpperCased())
-                            .font(.custom(customFonts, size: 18))
-                            .fontWeight(.medium)
+                        
+                        CustomText(text: "security_and_privacy", size: 18, fontWeight: .medium)
                     }
                     .frame(maxWidth: .infinity, alignment: .leading)
                     .padding(.vertical, 25)
@@ -55,9 +49,8 @@ struct SettingsView: View {
                     HStack {
                         Image("app_settings_icon")
                             .frame(width: 24, height: 24)
-                        Text("app_settings".localizedFirstUpperCased())
-                            .font(.custom(customFonts, size: 18))
-                            .fontWeight(.medium)
+                        
+                        CustomText(text: "app_settings", size: 18, fontWeight: .medium)
                     }
                     .frame(maxWidth: .infinity, alignment: .leading)
                     .padding(.vertical, 25)

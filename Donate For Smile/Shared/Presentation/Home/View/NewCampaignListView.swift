@@ -13,9 +13,7 @@ struct NewCampaignListView: View {
     var body: some View {
         VStack {
             HStack {
-                Text("new_campaigns".localizedFirstUpperCased())
-                    .font(.custom(customFonts, size: 16))
-                    .fontWeight(.medium)
+                CustomText(text: "new_campaigns", size: 16, fontWeight: .medium)
                 
                 Spacer()
                 

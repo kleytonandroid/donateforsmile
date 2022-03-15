@@ -32,6 +32,8 @@
 
 // Category Filter
 "categories" = "Categorias";
+"reset_filter" = "Restablecer Filtro";
+"apply_now" = "Aplicar Ahora";
 
 //HomeView
 "all_category" = "Todos";

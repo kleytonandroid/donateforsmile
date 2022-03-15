@@ -24,15 +24,12 @@ struct CoverFundraiserDetailView: View {
                     .frame(width: 20, height: 20)
                     .padding(.horizontal, 8)
                 
-                Text("Created 3 day ago")
-                    .font(.custom(customFonts, size: 12))
-                    .fontWeight(.medium)
+                CustomText(text: "Created 3 day ago", size: 12, fontWeight: .medium)
                     .foregroundColor(.white)
                 
                 Spacer()
                 
-                Text(category?.rawValue.localizedFirstUpperCased() ?? "")
-                    .font(.custom(customFonts, size: 12))
+                CustomText(text: category?.rawValue ?? "", size: 12)
                     .foregroundColor(.white)
                     .padding(6)
                     .background(Color(appGreenColor))
