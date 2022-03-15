@@ -10,11 +10,15 @@ class HomeViewModel: ObservableObject {
     
     @Published var topFundraisers: [FundraiserDO] = []
     @Published var newCampaigns: [FundraiserDO] = []
+    @Published var posts: [PostDO] = []
 
     private let fetchFundraiserUseCase: FetchFundraiserUseCase
+    private let fetchPostsUseCase: FetchPostsUseCase
     
-    init(fetchFundraiserUseCase: FetchFundraiserUseCase = DefaultFetchFundraiserUseCase()) {
+    init(fetchFundraiserUseCase: FetchFundraiserUseCase = DefaultFetchFundraiserUseCase(),
+         fetchPostsUseCase: FetchPostsUseCase = DefaultFetchPostsUseCase()) {
         self.fetchFundraiserUseCase = fetchFundraiserUseCase
+        self.fetchPostsUseCase = fetchPostsUseCase
     }
     
     func fetchTopFundraisers() {
@@ -23,5 +27,9 @@ class HomeViewModel: ObservableObject {
     
     func fetchNewCampaigns() {
         newCampaigns = fetchFundraiserUseCase.execute().shuffled()
+    }
+    
+    func fetchPosts() {
+        posts = fetchPostsUseCase.execute()
     }
 }

@@ -38,6 +38,10 @@ struct HomeView: View {
                         .padding(.top, 28)
                         .padding(.horizontal, 16)
                     
+                    ReadBlogsView(posts: $viewModel.posts)
+                        .padding(.top, 28)
+                        .padding(.horizontal, 16)
+                    
                     Spacer()
                         .frame(height: 100)
                     
@@ -47,6 +51,7 @@ struct HomeView: View {
         .onAppear {
             viewModel.fetchTopFundraisers()
             viewModel.fetchNewCampaigns()
+            viewModel.fetchPosts()
         }
         .navigationBarHidden(true)
     }
