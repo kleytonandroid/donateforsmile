@@ -127,6 +127,10 @@
 		67BEA0BB27E0C87A0034B22C /* FetchPostsUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67BEA0BA27E0C87A0034B22C /* FetchPostsUseCase.swift */; };
 		67BEA0BD27E0C9640034B22C /* ReadBlogsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67BEA0BC27E0C9640034B22C /* ReadBlogsView.swift */; };
 		67BEA0C027E0CEB60034B22C /* CustomText.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67BEA0BF27E0CEB60034B22C /* CustomText.swift */; };
+		67F0F13227EB878600ED5AA5 /* PostDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67F0F13127EB878600ED5AA5 /* PostDetailView.swift */; };
+		67F3FB2227EB89A300C31A3A /* AuthorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67F3FB2127EB89A300C31A3A /* AuthorView.swift */; };
+		67F3FB2427EB8E3300C31A3A /* PostListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67F3FB2327EB8E3300C31A3A /* PostListView.swift */; };
+		67F3FB2627EB8E6B00C31A3A /* PostListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67F3FB2527EB8E6B00C31A3A /* PostListViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -205,6 +209,10 @@
 		67BEA0BA27E0C87A0034B22C /* FetchPostsUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchPostsUseCase.swift; sourceTree = "<group>"; };
 		67BEA0BC27E0C9640034B22C /* ReadBlogsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReadBlogsView.swift; sourceTree = "<group>"; };
 		67BEA0BF27E0CEB60034B22C /* CustomText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomText.swift; sourceTree = "<group>"; };
+		67F0F13127EB878600ED5AA5 /* PostDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostDetailView.swift; sourceTree = "<group>"; };
+		67F3FB2127EB89A300C31A3A /* AuthorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthorView.swift; sourceTree = "<group>"; };
+		67F3FB2327EB8E3300C31A3A /* PostListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostListView.swift; sourceTree = "<group>"; };
+		67F3FB2527EB8E6B00C31A3A /* PostListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostListViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -592,6 +600,7 @@
 		67BEA0B627E0C4BB0034B22C /* Blog */ = {
 			isa = PBXGroup;
 			children = (
+				67F3FB2727EB8E8800C31A3A /* Model */,
 				67BEA0B727E0C4C40034B22C /* Views */,
 			);
 			path = Blog;
@@ -601,6 +610,9 @@
 			isa = PBXGroup;
 			children = (
 				67BEA0B827E0C4E70034B22C /* PostItemView.swift */,
+				67F0F13127EB878600ED5AA5 /* PostDetailView.swift */,
+				67F3FB2127EB89A300C31A3A /* AuthorView.swift */,
+				67F3FB2327EB8E3300C31A3A /* PostListView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -611,6 +623,14 @@
 				67BEA0BF27E0CEB60034B22C /* CustomText.swift */,
 			);
 			path = SharedElements;
+			sourceTree = "<group>";
+		};
+		67F3FB2727EB8E8800C31A3A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				67F3FB2527EB8E6B00C31A3A /* PostListViewModel.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -793,12 +813,15 @@
 			files = (
 				67BC87F227B1BD030082B385 /* ContentView.swift in Sources */,
 				67BEA0C027E0CEB60034B22C /* CustomText.swift in Sources */,
+				67F3FB2427EB8E3300C31A3A /* PostListView.swift in Sources */,
 				671D557B27DB9E66003EF0C8 /* VideoCoverView.swift in Sources */,
 				67BC881C27B1E2650082B385 /* FundraiserItem.swift in Sources */,
 				67183DB627BE926700932580 /* SharedDataModel.swift in Sources */,
 				67686B3127BC31A7005F16AB /* StringProtocol+Shortcuts.swift in Sources */,
 				671D558F27DBC6AC003EF0C8 /* SettingsView.swift in Sources */,
 				67BEA0BB27E0C87A0034B22C /* FetchPostsUseCase.swift in Sources */,
+				67F0F13227EB878600ED5AA5 /* PostDetailView.swift in Sources */,
+				67F3FB2227EB89A300C31A3A /* AuthorView.swift in Sources */,
 				671D557927DB9DF3003EF0C8 /* SwiftUIVideoView.swift in Sources */,
 				670A84A327B36E420095F24E /* OrganiserDO.swift in Sources */,
 				67183DDD27C6F0DC00932580 /* CategoryItemView.swift in Sources */,
@@ -820,6 +843,7 @@
 				670A849827B316A70095F24E /* RemainingDonationView.swift in Sources */,
 				67686B3427BC38FA005F16AB /* Category.swift in Sources */,
 				672E15F327DB8761007FE2B7 /* HomeCategoriesView.swift in Sources */,
+				67F3FB2627EB8E6B00C31A3A /* PostListViewModel.swift in Sources */,
 				67BEA0BD27E0C9640034B22C /* ReadBlogsView.swift in Sources */,
 				67BC882627B1E42E0082B385 /* ProgressBarView.swift in Sources */,
 				671D558727DBC43F003EF0C8 /* SavedListView.swift in Sources */,

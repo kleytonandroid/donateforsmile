@@ -17,7 +17,7 @@ struct ReadBlogsView: View {
                 
                 Spacer()
                 
-                NavigationLink(destination: FundraiserListView()) {
+                NavigationLink(destination: PostListView()) {
                     Text("\("see_all".localizedFirstUpperCased()) ->")
                         .font(.custom(customFonts, size: 16))
                         .fontWeight(.medium)
@@ -29,14 +29,12 @@ struct ReadBlogsView: View {
                 VStack(spacing: 0) {
                     LazyHStack() {
                         ForEach(posts) { post in
-//                            NavigationLink(destination: FundraiserDetailView(model: fundRaiser)) {
-//                                FundraiserItem(model: fundRaiser)
-//                                    .frame(width: 275, height: 280)
-//                            }
-//                            .navigationBarTitleDisplayMode(.inline)
-//                            .buttonStyle(PlainButtonStyle())
-                            PostItemView(model: post)
-                                .frame(width: 275, height: 280)
+                            NavigationLink(destination: PostDetailView(model: post)) {
+                                PostItemView(model: post)
+                                    .frame(width: 275, height: 280)
+                            }
+                            .navigationBarTitleDisplayMode(.inline)
+                            .buttonStyle(PlainButtonStyle())
                         }
                     }
                 }

@@ -51,14 +51,14 @@ let mockPosts = [PostDO(title: "The Inspiring People Helping With Coronavirus Ef
                         content: "Six Ways to Get Help Millions of businesses across the US are …….. Read more .",
                         liked: false,
                         authorName: "Kleyton",
-                        authorAvatar: "",
+                        authorAvatar: "avatar_profile_example",
                         createdAt: "July 26, 2021 • 7 min read"),
                  PostDO(title: "Coronavirus Relief for Small Businesses",
                         cover: "cover_campaign_poverty",
                         content: "Six Ways to Get Help Millions of businesses across the US are …….. Read more .",
                         liked: false,
                         authorName: "Kleyton",
-                        authorAvatar: "",
+                        authorAvatar: "avatar_profile_example",
                         createdAt: "July 26, 2021 • 7 min read")
                  
 ]
