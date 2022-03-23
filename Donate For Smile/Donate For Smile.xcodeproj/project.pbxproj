@@ -26,10 +26,6 @@
 		670A854827B57ED00095F24E /* FundraiserListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 670A854727B57ED00095F24E /* FundraiserListViewModel.swift */; };
 		670A854B27B5811B0095F24E /* FetchFundraiserUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 670A854A27B5811B0095F24E /* FetchFundraiserUseCase.swift */; };
 		670A854E27B59F6C0095F24E /* MockEntities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 670A854D27B59F6C0095F24E /* MockEntities.swift */; };
-		67183DB627BE926700932580 /* SharedDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67183DB527BE926700932580 /* SharedDataModel.swift */; };
-		67183DB727BE926700932580 /* SharedDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67183DB527BE926700932580 /* SharedDataModel.swift */; };
-		67183DB827BE926700932580 /* SharedDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67183DB527BE926700932580 /* SharedDataModel.swift */; };
-		67183DB927BE926700932580 /* SharedDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67183DB527BE926700932580 /* SharedDataModel.swift */; };
 		67183DBC27BFEA5E00932580 /* FilterCategoriesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67183DBB27BFEA5E00932580 /* FilterCategoriesView.swift */; };
 		67183DBD27BFEA5E00932580 /* FilterCategoriesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67183DBB27BFEA5E00932580 /* FilterCategoriesView.swift */; };
 		67183DBE27BFEA5E00932580 /* FilterCategoriesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67183DBB27BFEA5E00932580 /* FilterCategoriesView.swift */; };
@@ -158,7 +154,6 @@
 		670A854727B57ED00095F24E /* FundraiserListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FundraiserListViewModel.swift; sourceTree = "<group>"; };
 		670A854A27B5811B0095F24E /* FetchFundraiserUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchFundraiserUseCase.swift; sourceTree = "<group>"; };
 		670A854D27B59F6C0095F24E /* MockEntities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockEntities.swift; sourceTree = "<group>"; };
-		67183DB527BE926700932580 /* SharedDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SharedDataModel.swift; sourceTree = "<group>"; };
 		67183DBB27BFEA5E00932580 /* FilterCategoriesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterCategoriesView.swift; sourceTree = "<group>"; };
 		67183DDC27C6F0DC00932580 /* CategoryItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryItemView.swift; sourceTree = "<group>"; };
 		671D557827DB9DF3003EF0C8 /* SwiftUIVideoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIVideoView.swift; sourceTree = "<group>"; };
@@ -282,7 +277,6 @@
 				67BC882027B1E27A0082B385 /* Helpers.swift */,
 				67BC883727B2DF660082B385 /* SharedComponents */,
 				67BC881A27B1E2470082B385 /* Fundraiser */,
-				67183DB527BE926700932580 /* SharedDataModel.swift */,
 				671D559027DBCFB3003EF0C8 /* ProfileView.swift */,
 			);
 			path = Presentation;
@@ -816,7 +810,6 @@
 				67F3FB2427EB8E3300C31A3A /* PostListView.swift in Sources */,
 				671D557B27DB9E66003EF0C8 /* VideoCoverView.swift in Sources */,
 				67BC881C27B1E2650082B385 /* FundraiserItem.swift in Sources */,
-				67183DB627BE926700932580 /* SharedDataModel.swift in Sources */,
 				67686B3127BC31A7005F16AB /* StringProtocol+Shortcuts.swift in Sources */,
 				671D558F27DBC6AC003EF0C8 /* SettingsView.swift in Sources */,
 				67BEA0BB27E0C87A0034B22C /* FetchPostsUseCase.swift in Sources */,
@@ -868,7 +861,6 @@
 				670A84A427B36E420095F24E /* OrganiserDO.swift in Sources */,
 				67BC883F27B2E5DE0082B385 /* FundraiserListView.swift in Sources */,
 				67BC87F127B1BD030082B385 /* Donate_For_SmileApp.swift in Sources */,
-				67183DB727BE926700932580 /* SharedDataModel.swift in Sources */,
 				670A849427B314E30095F24E /* FundraiserDetailView.swift in Sources */,
 				672E15D727DA92FB007FE2B7 /* AvatarDonatedView.swift in Sources */,
 				670A849F27B36DC00095F24E /* FundraiserDO.swift in Sources */,
@@ -893,7 +885,6 @@
 			files = (
 				67BC87E327B1BD030082B385 /* Tests_iOSLaunchTests.swift in Sources */,
 				67BC881E27B1E2650082B385 /* FundraiserItem.swift in Sources */,
-				67183DB827BE926700932580 /* SharedDataModel.swift in Sources */,
 				67183DDF27C6F0DC00932580 /* CategoryItemView.swift in Sources */,
 				672E15D827DA92FB007FE2B7 /* AvatarDonatedView.swift in Sources */,
 				670A84A527B36E420095F24E /* OrganiserDO.swift in Sources */,
@@ -919,7 +910,6 @@
 			files = (
 				67BC87EF27B1BD030082B385 /* Tests_macOSLaunchTests.swift in Sources */,
 				67BC881F27B1E2650082B385 /* FundraiserItem.swift in Sources */,
-				67183DB927BE926700932580 /* SharedDataModel.swift in Sources */,
 				67183DE027C6F0DC00932580 /* CategoryItemView.swift in Sources */,
 				672E15D927DA92FB007FE2B7 /* AvatarDonatedView.swift in Sources */,
 				670A84A627B36E420095F24E /* OrganiserDO.swift in Sources */,
